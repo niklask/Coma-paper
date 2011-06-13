@@ -3,4 +3,5 @@ Collaboration with Christoph Pfrommer and Anders Pinzke
 
 Requires either emulateapj (and revtex4.1) or AASTeX package to typeset properly.
 
+2011-06-13 [Niklas Karlsson] Added theta^2 and significance distribution plots and updated skymaps
 2011-05-12 [Niklas Karlsson] Added the necessary files to typeset the first draft of the paper
