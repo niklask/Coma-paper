@@ -1,6 +1,8 @@
 \documentclass[12pt,manuscript]{aastex}
 %%\documentclass[twocolumn]{emulateapj}
 
+\usepackage{lscape}
+
 \newcommand{\vdag}{(v)^\dagger}
 \newcommand{\myemail}{nkarlsson@physics.umn.edu}
 \newcommand{\expval}[1]{\left\langle #1 \right\rangle}
@@ -63,21 +65,41 @@ The data analysis was performed following the standard VERITAS procedures descri
 
 Gamma-ray like events are separated from the CR background by imposing cuts on scaled parameters \citep{article:Aharonian_etal:1997, article:Krawczynski_etal:2006} calculated from a parameterized moment analysis of the shower images \citep{inproc:Hillas:1985}. The gamma-hadron separation cuts used in this analysis were optimized a priori for a weak point source (3\% Crab Nebula flux level) and a photon index of -2.4 using data taken on the Crab Nebula during the same epoch and are termed \emph{standard} cuts. Because the VHE gamma-ray spectrum for the Coma cluster is expected to be hard, photon index of about -2.3, these standard cuts are suitable for the analysis of the Coma cluster data set. 
 
-The ring background model \citep{article:Aharonian_etal:2001} is used to estimate the background due to CRs. The total number of events in a given region of interest is then compared to the estimated background from the off-source region scaled by the ratio of the solid angles to produce a final excess. The VHE gamma-ray significance is then calculated using the method by \citet{article:LiMa:1983}.  Significance skymaps over the VERITAS field of view are shown in Figure \ref{fig:Coma:skymaps} with overlaid X-ray and radio contours from the ROSAT all-sky survey \citep{article:BrielHenryBohringer:1992}  and GBT 1.4 GHz observations \citep{article:BrownRudnick:2010} respectively. 
+The ring background model \citep{article:Aharonian_etal:2001} is used to estimate the background due to CRs. The total number of events in a given region of interest is then compared to the estimated background from the off-source region scaled by the ratio of the solid angles to produce a final excess. The VHE gamma-ray significance is then calculated using the method by \citet{article:LiMa:1983}.  Significance skymaps over the VERITAS field of view are shown in Figure \ref{fig:skymaps} with overlaid X-ray and radio contours from the ROSAT all-sky survey \citep{article:BrielHenryBohringer:1992}  and GBT 1.4 GHz observations \citep{article:BrownRudnick:2010} respectively.
 
 \begin{figure*}
 \begin{center}
-\scalebox{0.5}{\plotone{f1a.eps}}
-\scalebox{0.5}{\plotone{f1b.eps}}
+\scalebox{0.45}{\plotone{f1a.eps}}
+\scalebox{0.45}{\plotone{f1b.eps}}
 \end{center}
-\caption{Skymaps.}
-\label{fig:Coma:skymaps}
+\caption{\emph{Top}: Smoothed significance map of the Coma cluster calculated from the observed excess VHE gamma-ray events over a $4.5^{\circ}\times 4.5^{\circ}$ field of view. The excess counts were derived using a ring-ring background model \citep{article:Aharonian_etal:2001}. White contours show the X-ray counts per second in the 0.1 to 2.4 keV energy band from the ROSAT all-sky survey \citep{article:BrielHenryBohringer:1992}. \emph{Bottom}: Same as above but with overlaid contours from point source subtracted GBT radio observations at 1.4 GHz \citep{article:BrownRudnick:2010}. Shown are also the $0.2^{\circ}$ and $0.4^{\circ}$ radii (dashed cyan) considered for the extended source analyses presented here.}
+\label{fig:skymaps}
 \end{figure*}
 
-\section{Results}
-No significant excess was detected with VERITAS in the Coma cluster.
-A 99\% confidence level upper limit is calculated for each region of interest using the method described by \citet{article:Rolke:2005} and assuming Gaussian background. 
 
+
+\section{Results}
+No significant excess of VHE gamma-rays from the Coma cluster was detected with VERITAS. 
+
+A 99\% confidence level upper limit is calculated for each region of interest using the method described by \citet{article:Rolke:2005} assuming a Gaussian background. Figure \ref{fig:sigdist} shows that the VERITAS data is well fit by a Gaussian with a mean of zero and unit standard deviation. The results are listed in Table \ref{table:results}.
+
+\begin{figure*}
+\begin{center}
+\scalebox{1.0}{\plotone{f2.eps}}
+\end{center}
+\caption{$\theta^{2}$ distribution from VERITAS observations of the Coma cluster of galaxies. The points with error bars represent the ON-source data sample and and the filled area the background sample. Each bin represents an annulus around the Coma cluster core position. The data were derived from the ring-ring background model using a $0.2^{\circ}$ sampling radius.}
+\label{fig:thetasq}
+\end{figure*}
+
+\begin{figure*}
+\begin{center}
+\scalebox{1.0}{\plotone{f3.eps}}
+\end{center}
+\caption{Distribution of significance for Figure \ref{fig:skymaps} and a sampling radius of $0.2^{\circ}$. The line is a Gaussian fit to the data, with mean close to zero and almost unit standard deviation.}
+\label{fig:sigdist}
+\end{figure*}
+
+\begin{landscape}
 \begin{deluxetable}{lccccccc}
 \tablecolumns{7}
 \tablewidth{0pc}
@@ -103,6 +125,7 @@ NGC 4921 & \RA{13}{01}{26.12} & \Dec{+27}{53}{09.59} & 0 & -4 & -0.23 & 1.89 & (
 \tablenotetext{b}{99\% confidence level upper limit calculated according to \citet{article:Rolke:2005} above an energy threshold of 220 GeV. Values in parentheses are the corresponding fluxes in percent of the steady Crab Nebula flux.}
 \label{table:results}
 \end{deluxetable}
+\end{landscape}
 
 \section{Cosmic Rays}
 
