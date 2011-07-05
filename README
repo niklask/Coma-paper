@@ -3,6 +3,7 @@ Collaboration with Christoph Pfrommer and Anders Pinzke
 
 Requires either emulateapj (and revtex4.1) or AASTeX package to typeset properly.
 
+2011-07-05 [Niklas Karlsson] Added a section Fermi-LAT analysis.
 2011-07-01 [Niklas Karlsson] Temporaty plots for Xcr and DM annihilation cross section. Place holder for integrated spectrum plot.
 2011-07-01 [Niklas Karlsson] Latest draft with updated citations, tables and discussion about RoI selection
 2011-06-13 [Niklas Karlsson] Some more text in the Results section and moved figures and tables to the end
