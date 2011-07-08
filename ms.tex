@@ -3,11 +3,22 @@
 
 \usepackage{lscape}
 
+\def\del#1{{}}
+%\def\del#1{{\bf (DELETED TEXT)}}
+\def\C#1{#1}
+%\def\C#1{{\bf #1}}
+
 \newcommand{\vdag}{(v)^\dagger}
 \newcommand{\myemail}{nkarlsson@physics.umn.edu}
 \newcommand{\expval}[1]{\left\langle #1 \right\rangle}
 \newcommand{\RA}[3]{#1$^{\mathrm{h}}$#2$^{\mathrm{m}}$#3$^{\mathrm{s}}$}
 \newcommand{\Dec}[3]{#1$^{\circ}$#2\arcmin#3\arcsec}
+\newcommand{\rmn}{\mathrm}
+\newcommand{\CR}{\mathrm{CR}}
+\newcommand{\dps}{\displaystyle}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\bra}{\langle}
+\newcommand{\ket}{\rangle}
 
 \shorttitle{Coma Cluster Observations with VERITAS}
 \shortauthors{VERITAS collaboration}
@@ -20,10 +31,10 @@
 \affil{(the VERITAS collaboration)} 
 %%\email{nkarlsson@physics.umn.edu}
 \and
-\author{S. Federici\altaffilmark{3,4}, C. Pfrommer\altaffilmark{5,6},
+\author{S. Federici\altaffilmark{3,4}, C. Pfrommer\altaffilmark{1,5,6},
 A. Pinzke\altaffilmark{7}}
 
-\altaffiltext{1}{Corresponding author: N. Karlsson, nkarlsson@physics.umn.edu}
+\altaffiltext{1}{Corresponding authors: N. Karlsson, nkarlsson@physics.umn.edu \& C. Pfrommer, christoph.pfrommer@h-its.org}
 \altaffiltext{2}{School of Physics and Astronomy, University of Minnesota, Minneapolis, MN 55455, USA}
 \altaffiltext{3}{DESY, Platanenallee 6, 15738 Zeuthen, Germany}
 \altaffiltext{4}{ Institut fu\"r Physik und Astronomie, Universit\"at Potsdam, 14476 Potsdam-Golm, Germany}
@@ -58,7 +69,7 @@ A third mechanism for gamma-ray production in a galaxy cluster is self-annihilat
 
 While several observations of clusters of galaxies have been made with satellite-borne and ground-based telescopes, a detection of gamma-ray emission from a cluster has yet to be made.  Observations with EGRET \citep{article:Sreekumar_etal:1996, article:Reimer_etal:2003} and the Fermi Gamma-ray Space Telescope \citep{article:Ackermann_etal:2010} have provided upper limits on the gamma-ray fluxes (typically $\sim10^{-9}$ ph cm$^{2}$ s$^{-1}$ for Fermi observations) for several galaxy clusters in the MeV to GeV band. Upper limits on the VHE gamma-ray flux from a few select clusters, including the Coma cluster, have been provided by observations with ground-based imaging atmospheric Cherenkov telescopes \citep[IACTs;][]{article:Perkins_etal:2006, inproc:Perkins_etal:2008, article:Aharonian_etal:2009, article:Aleksic_etal:2010}.
 
-The Coma cluster of galaxies (ACO 1656) is one of the most thouroughly studied clusters over all wavelengths \citep{article:Voges_etal:1999}. Located at a distance of about 100 Mpc \citep[$z=0.023$;][]{article:StrubleRood:1999}, it is one of the closest and also one of the most massive clusters \citep[$M \sim 10^{15}M_{\odot}$;][]{article:Smith:1983, article:Kubo_etal:2008}. It hosts both a giant radio halo \citep{article:Giovannini_etal:1993,article:Thierbach_etal:2003} and peripheral radio relic, which appears connected to the radio halo with a ``diffuse'' bridge \citep[see discussion in][]{article:BrownRudnick:2010}. It has been suggested that the relic is an infall shock. Extended soft X-ray (SXR) emission is evident from the ROSAT all-sky survey in the 0.1 to 2.4 keV band \citep{article:BrielHenryBohringer:1992} and observations with XMM-Newton \citep{article:Briel_etal:2001} revealed substructure in the X-ray halo. As such it is a natural candidate for gamma-ray observations. In this article, results from the VERITAS observations of the Coma cluster of galaxies are reported, together with the resulting constraints on cosmic-ray particle populations, magnetic fields, and dark matter in the cluster.
+The Coma cluster of galaxies (ACO 1656) is one of the most thouroughly studied clusters over all wavelengths \citep{article:Voges_etal:1999}. Located at a distance of about 100 Mpc \citep[$z=0.023$;][]{article:StrubleRood:1999}, it is one of the closest and also one of the most massive clusters \citep[$M \sim 10^{15}M_{\odot}$;][]{article:Smith:1983, article:Kubo_etal:2008}. It hosts both a giant radio halo \citep{article:Giovannini_etal:1993,article:Thierbach_etal:2003} and peripheral radio relic, which appears connected to the radio halo with a ``diffuse'' bridge \citep[see discussion in][]{article:BrownRudnick:2010}. It has been suggested that the relic is an infall shock \citep{1998A&A...332..395E} and succesively demonstrated by cosmological simulations that model the non-thermal emission processes \citep{2008MNRAS.385.1211P,2008MNRAS.385.1242P,2009MNRAS.393.1073B, 2011ApJ...735...96S}. Extended soft X-ray (SXR) emission is evident from the ROSAT all-sky survey in the 0.1 to 2.4 keV band \citep{article:BrielHenryBohringer:1992} and observations with XMM-Newton \citep{article:Briel_etal:2001} revealed substructure in the X-ray halo. As such it is a natural candidate for gamma-ray observations. In this article, results from the VERITAS observations of the Coma cluster of galaxies are reported, together with the resulting constraints on cosmic-ray particle populations, magnetic fields, and dark matter in the cluster. Throughout the analysis, we use a present day Hubble constant of $H_0 = 100 h \mbox{ km s}^{-1} \mbox{ Mpc}^{-1}$ with $h=0.7$.
 
 \section{VERITAS Observations and Analysis}
 The VERITAS gamma-ray detector \citep{article:Weekes_etal:2002} is an array of four 12 m diameter imaging atmospheric Cherenkov telescopes \citep[IACTs;][]{article:Holder_etal:2006} located at an altitude of 1268 m a.s.l. at the Fred Lawrence Whipple Observatory in southern Arizona (31$^{\circ}$~40\arcmin~30\arcsec~N, 110$^{\circ}$~57\arcmin~07\arcsec~W). Each of the telescopes is equipped with a 499 pixel camera covering a 3.5$^{\circ}$ field of view. The array, completed in the spring of 2007, is designed to detect gamma-ray emission from astrophysical objects in the energy range from 100 GeV to more than 30 TeV. The energy resolution is about 15\% and the angular resolution (68\% containment) is about 0.1$^{\circ}$ per event at 1 TeV. The sensitivity of the array allows for detection of a point source with a flux of 1\% of the steady Crab Nebula flux above 300 GeV at the $5\sigma$ level in under 30 hours.\footnote{The integral flux sensitivity above 300 GeV was improved by about 30\% with the move of one telescope in the summer of 2009. The move had no impact on the Coma cluster data set.}
@@ -83,14 +94,388 @@ No significant excess of VHE gamma-rays from the Coma cluster was detected with 
 
 Table \ref{table:results} lists the upper limits for the selected regions of interest tabulated in Table \ref{table:roi}. These upper-limit calculations depend on the gamma-ray spectrum, which in this work is assumed to be a power law with a spectral index $\alpha=2.1, 2.3$, and $2.5$.
 
+
+
 \section{Cosmic Rays}
 
-\section{Constrainsts on Magnetic Fields}
+We decided to adopt a multifaceted approach to constrain the CR-to-thermal
+pressure distribution in Coma with these upper limits. That includes (1) an
+analytic model derived from cosmological hydrodynamical simulations of the
+formation of galaxy clusters, (2) a simplified multi-frequency analytical
+approach that assumes a constant CR-to-thermal energy density and a power-law
+spectrum in momentum, and (3) an approach that uses the observed luminosity of
+the giant radio halo in Coma to place a lower limit on the expected $\gamma$-ray
+flux in the hadronic model -- independent of the magnetic field distribution.
+This translates into a minimum CR pressure which, if challenged by tight
+gamma-ray limits/detections, enables scrutinizing the hadronic interaction model
+of the formation of giant radio halos.  Modelling the CR distribution through
+different techniques enable to bracket our ignorance about the underlying plasma
+physics that shape the CR distribution and hence reflect the Bayesian priors
+that are imposed on the modelling \citep[see][for a
+discussion]{2011arXiv1105.3240P}.
+
+
+
+\subsection{Simulation-based approach}
+
+We adopt the universal spectral and spatial gamma-ray model developed by
+\citet{2010MNRAS.409..449P} to estimate the emission from decaying neutral pions
+that dominates over the IC emission from primary and secondary electrons above
+100~MeV in clusters. Given a density profile as, e.g., inferred by cosmological
+simulations or X-ray observations, the analytic approach models the CR
+distribution and the associated radiative emission processes from radio to the
+gamma-ray band.  This formalism was derived from high resolution simulations of
+clusters of galaxies that included radiative hydrodynamics, star formation,
+supernova feedback, and followed CR physics using a novel formulation that trace
+the most important injection and loss processes self-consistently while
+accounting for the CR pressure in the equation of motion
+\citep{2006MNRAS.367..113P,2007A&A...473...41E,2008A&A...481...33J}.  The
+results are in line with earlier numerical results on some of the overall
+characteristics of the CR distribution and the associated radiative emission
+processes \citep{2000A&A...362..151D,2001ApJ...559...59M,2003MNRAS.342.1009M,
+  2007MNRAS.378..385P,2008MNRAS.385.1211P,2008MNRAS.385.1242P}, but for the
+first time is able to track the spectral evolution as a function of space while
+accounting for the non-linear feedback of such a population on the hydrodynamics
+in a high-resolution cosmological simulation of the formation of galaxy
+clusters.
+ 
+We note that the overall normalization of the CR and gamma-ray distribution
+scales with the maximum acceleration efficiency at structure formation shock
+waves. Following recent observations at supernova remnants
+\cite{2009Sci...325..719H} as well as theoretical studies
+\cite{2005ApJ...620...44K}, we adopt an optimistic but nevertheless realistic
+value of this parameter and assume that 50\% of the dissipated energy at strong
+shocks is injected into CRs while this efficiency rapidly decreases for weaker
+shocks \cite{2007A&A...473...41E}. Since the vast majority of internal formation
+shocks (merger and flow shocks) are weak shocks with Mach numbers $M\lesssim3$
+\citep[e.g.,][]{2003ApJ...593..599R,2006MNRAS.367..113P} they do not
+significantly contribute to the CR population in clusters. Instead, strong
+shocks during the formation epoch of clusters and strong accretion shocks at the
+present time (at the boundary of voids and filaments/super-cluster regions)
+dominate the injection of CRs which are adiabatically transported into clusters
+thereafter. Hence, these model predictions provide a plausible upper limit for
+the CR contribution from structure formation shocks in galaxy clusters which can
+be scaled down for a lower effective acceleration efficiency in the strong shock
+regime.  On the other hand, other possible CR sources such as AGN and starburst
+driven galactic winds have been neglected for simplicity which could in
+principle increase the expected gamma-ray yield from clusters by an unknown
+factor.
+
+There are additional limitations of the simulated physics in these cosmological
+simulations which only considered advective transport of CRs by turbulent gas
+motions which produces centrally enhanced profiles.  However, active CR
+transport such as CR diffusion and streaming tends to drive the CR radial
+profiles towards being flat, with equal CR number density everywhere. While the
+CR streaming is then usually larger than typical advection velocities and
+becomes comparable or lower than this only for periods with trans- and
+supersonic cluster turbulence during a cluster merger. As a consequence a
+bimodality of the CR spatial distribution results with merging (relaxed)
+clusters showing a centrally concentrated (flat) CR energy density profile
+\cite{2011A&A...527A..99E}.  This translates into a bimodality of the expected
+diffuse radio and gamma-ray emission of clusters, since more centrally
+concentrated CR will find higher target densities for hadronic CR proton
+interactions \cite{2011A&A...527A..99E}. As a result of this, relaxed clusters
+could have a reduced gamma-ray luminosity by up to a factor of five. The goal of
+this and other future work of seeking for gamma-ray emission from clusters is to
+constrain the acceleration physics and transport properties of CRs.
+
+We adopt the electron density profile for the Coma cluster that has been
+inferred from ROSAT X-ray observations \citep{1992A&A...259L..31B} and model the
+spatial and spectral distribution of CRs according to the (conservative) model
+by \citet{2010MNRAS.409..449P} that neglects the contribution of cluster
+galaxies. Figure ?? shows the expected spectrum of Coma, normalized to the total
+flux within the virial radius. Add {\em Fermi} results \ldots
+
+Figure~\ref{fig:xcr} shows the relative CR pressure, $X_\CR = \bra P_\CR
+\ket / \bra P_\rmn{th} \ket$ as a function of radial distance from the
+Coma cluster center (dashed lines). To compute the CR pressure, we assume a
+lower cutoff of the CR distribution of $P = 0.8\,m_\rmn{p} c^2$ as found in
+these simulations due to the high cooling rates at low CR energies that
+effectively thermalizes the low-energy, trans-relativistic CR population.  The
+relative CR pressure rises toward the outer regions due to CR acceleration being
+more efficient at the peripheral strong accretion shocks compared to weak
+central flow shocks and adiabatic compression of a composite of CRs and thermal
+gas disfavours the CR pressure relative to the thermal pressure due to the
+softer equation of state of CRs. The weak increase of $X_\CR$ toward the core is
+due to the comparably fast thermal cooling of gas which diminishes the thermal
+pressure support relative to that in CRs yielding to adiabatic compression of
+CRs.
+
+Table~\ref{table:constraints} shows the expected gamma-ray fluxes within the
+regions of interest. For the most constraining regions tested (within an
+aperture of radius 0.2$^\circ$), those are a factor of 7.2 below the inferred
+upper limits (see Table~\ref{table:results} and assuming a spectral index of
+$\alpha=2.3$ which matches the simulated one at energies $E=200$~GeV).  Hence we
+scale the averaged relative CR pressure, $X_\CR = \bra P_\CR \ket /
+\bra P_\rmn{th} \ket$ of our model by that factor, keep the spatial
+behavior and obtain an integrated limit of the relative CR pressure of
+$X_\CR<0.091$ within 0.2$^\circ$ that translates to a limit within the cluster
+virial radius of $X_\CR<0.13$ (solid lines of Figure~\ref{fig:xcr}).
+
+
+
+\subsection{Simplified analytical model}
+
+To complement the simulation-inspired analysis and to facilitate comparison with
+earlier analytical work, we repeat the data analysis with a simplified
+analytical model that assumes a power-law CR spectrum and a constant relative CR
+pressure, i.e., we adopt the {\em isobaric model of CRs}. Since a priori, the CR
+spectral index is unconstrained, we vary it within plausible ranges of
+$2.1<\alpha_\rmn{p}<2.5$. These spectral ranges are needed to explain the radio
+spectral index of the giant radio halo of Coma after accounting for the spectral
+steepening at frequencies $\nu\sim5~\rmn{GHz}$ due to the Sunyaev-Zel'dovich
+effect \citep{2004A&A...413...17P}\footnote[4]{Assuming a magnetic field of
+  1~$\mu$G, the CR protons responsible for the GHz radio emitting electrons have
+  an energy of $~100$~GeV and are $\sim$ 20 times less energetic than those CR
+  protons that are responsible for the 200 GeV $\gamma$-ray emission. This is
+  consistent with the concave curvature found in the universal CR spectrum
+  \citet{2010MNRAS.409..449P}.}.  Table~\ref{table:constraints} shows the
+resulting constraints on $X_\CR$ which range between 0.05 and 1, strongly
+depending on the assumed spectral index.
+
+Add {\em Fermi} results, critical spectral index \ldots
+
+
+\del{
+the limit for 0.2 deg and alpha_p = 2.3 is compatible with the simulation based
+one, X_CR < 0.1. However, there is currently a discrepancy in our assumptions
+about the lower energy cutoff of CRs: in the simulations we use P/mp c = 0.8 (as
+simulated) while I set this to 0 in my simplified (isobaric) model. The
+discrepancy can be understood as follows:
+*) in the isobaric model, we would have to normalize our $X_\CR$ by a factor of 2/3
+for an effective spectral index of ~ 2.4 (between GeV and 200 GeV) as inferred
+from the simulations (see Fig 1, CP & Ensslin 2004, A&A, 413, 17).
+*) In the simulation model, we have an increased pressure by this factor of 3/2
+(in comparison to a power law spectrum with alpha_TeV ~ 2.3 down to a cutoff in
+the normalized momentum of 0.8) due to the concave curvature of our spectrum.
+}
+
+\subsection{Minimum gamma-ray flux}
+
+For clusters that host radio halos we are able to derive a minimum $\gamma$-ray
+flux in the hadronic model of CR interactions. The idea is based on the fact
+that a stationary distribution of CR electrons loses all its energy to
+synchrotron radiation for strong magnetic fields ($B \gg B_\rmn{CMB} \simeq 3.2
+\mu$G) so that the ratio of $\gamma$-ray to synchrotron flux becomes independent
+of the spatial distribution of CRs and thermal gas \citep{2008MNRAS.385.1242P}.
+This can be easily seen by considering the pion decay induced $\gamma$-ray
+luminosity $L_\gamma$ and the synchrotron luminosity $L_\nu$ of a steady state
+distribution of CR electrons that has been generated by hadronic CR
+interactions,
+\begin{eqnarray}
+L_\gamma &=& A_\gamma \dps\int d V\, n_\CR n_\rmn{gas},\\
+\label{eq:Lnu}
+   L_\nu &=& A_\nu \dps\int d V\, n_\CR n_\rmn{gas} \frac{\dps
+    \eps_B^{(\alpha_\nu+1)/2}}{\dps\eps_\rmn{CMB}+\eps_B}\\
+  &\simeq&A_\nu \dps\int d V\, n_\CR n_\rmn{gas}\quad\rmn{for}~\eps_B \gg \eps_\rmn{CMB}.
+\end{eqnarray}
+Here $A_\gamma$ and $A_\nu$ are dimensional constants that depend on the
+hadronic physics of the interaction \citep{2008MNRAS.385.1211P,
+  2008MNRAS.385.1242P} and $\alpha_\nu\simeq 1$ is the observed synchrotron
+spectral index. Hence we can derive a minimum $\gamma$-ray flux in the hadronic
+model
+\begin{equation}
+  \label{eq:Fmin}
+  \mathcal{F}_{\gamma,\rmn{min}} = 
+  \frac{\dps A_\gamma}{\dps A_\nu}\frac{\dps L_\nu}{\dps 4\pi D_\rmn{lum}^2},
+\end{equation}
+where $L_\nu$ is the observed luminosity of the radio mini-halo and
+$D_\rmn{lum}$ denotes the luminosity distance to the respective cluster.
+Lowering the magnetic field would require an increase in the energy density of
+CR electrons to reproduce the observed synchrotron luminosity and thus increase
+the associated $\gamma$-ray flux. 
+
+To derive a minimum gamma-ray flux that is comparable to the upper limits, we
+need to determined the radio flux within the corresponding angular regions. To
+this end, we fit the point source subtracted, azimuthally averaged radio halo
+profile at 1.38 GHz \citet{1997A&A...321...55D} with a $\beta$-model,
+\begin{equation}
+S_\nu (r_\bot)= S_0\, 
+\left[ 1 + \left( \frac{r_\bot}{r_{\rmn{c}}}\right)^2\right]
+^{-3\beta + 1/2},
+\label{beta}
+\end{equation}
+where $S_0 = 1.1 \times 10^{-3}\,\rmn{Jy\,arcmin}^{-2}$, $r_{\rmn{c}} = 450
+kpc$, and $\beta = 0.78$.  Within the error bars, this profile is consistent
+with 326 MHz-data taken by \citet{2001A&A...369..441G} when scaled with a radio
+spectral index of 1.15. 
+
+The results for the minimum gamma-ray flux $F_{\rmn{min}}(>E=220~\rmn{GeV}$ and
+the minimum relative CR pressure, $X_{\CR,\,\rmn{min}} = F_{\rmn{min}}/F$ are
+shown in Table~\ref{table:constraints}. Even in the most constraining case
+($\alpha=2.1$, $<0.2^\circ$), these are a factor of about 60 below the upper
+limits obtained in this work. 
+
+Add {\em Fermi} results\ldots
+
+
+
+\section{Constraining the Magnetic Field}
+\label{sec:B}
+
+
+We have seen in the previous Section that we can obtain an absolute lower limit
+on the gamma-ray emission in the hadronic model by assuming high magnetic
+fields, $B>B_\rmn{CMB}$. Hence, we can turn this around by using our upper limit
+on the gamma-ray emission (and by extension on the CR pressure) to infer a lower
+limit on the magnetic field that is needed to explain the observed radio
+emission which, however, assumes the validity of the hadronic model. Lowering
+the gamma-ray constraint will tighten (increase) the magnetic field limit. Once
+this gets in conflict with magnetic field measurements by means of other
+methods, e.g., Faraday rotation measure (RM)\footnote{Generally, Faraday RM
+  of the magnetic field strength by, e.g., background sources through clusters
+  are degenerate with the magnetic coherence scale. Only a simultaneous
+  deprojection method that self-consistently solves for the magnetic power
+  spectrum is in principle able to break this degeneracy, however, require
+  high-quality data and picks up further complications when using embedded
+  sources within the cluster plasma, e.g., degeneracies with the assumed
+  projection angle of the jet \citep{2011A&A...529A..13K}.}, this would
+challenge the hadronic model of radio halos.  The method that we use to
+constrain the magnetic field inherits a dependence on the assumed spatial
+structure that we parametrize by
+\begin{equation}
+  \label{eq:B}
+  B(r) = B_0  \,\left(\frac{n_\rmn{e}(r)}{n_\rmn{e}(0)}\right)^{\alpha_B},
+\end{equation}
+as suggested by Faraday RM studies and numerical magneto-hydrodynamical (MHD)
+simulations \citep[][and references therein]{2010A&A...513A..30B,
+  2011arXiv1107.0968B}. In fact, the magnetic field in the Coma cluster is among
+the best ones constrained due to its proximity that enables RM observations of
+seven radio-sources located at projected distances of 50 to 1500 kpc from the
+cluster center. The best fit model obtains $B_0 = 4.7^{+0.7}_{-0.8}\,\mu$G and
+$\alpha_B = 0.5^{+0.2}_{-0.1}$ \citep{2010A&A...513A..30B}.  We aim for
+constraining the central field strength, $B_0$, which depends on the magnetic
+decline, $\alpha_B$, that we vary (within reasonable ranges of
+$\Delta\alpha_B=0.2$ as suggested from the Faraday RM studies) to address this
+dependence. We proceed as follows:
+
+1) Given a model for the magnetic field, we determine the profile of the
+relative CR pressure, $X_\CR$, so that the hadronically produced CR electrons
+exactly matches the observed radio halo emission over the entire extent. To this
+end, we de-project the fit to the surface brightness profile (using an Abel
+integral equation, see Appendix of \citealt{2004A&A...413...17P}) yielding the
+radio emissivity,
+\begin{equation}
+  \label{eq:Coma:radio}
+  j_\nu (r) = \frac{S_0}{2\pi\, r_\rmn{c}}\, 
+  \frac{6\beta - 1}{\left(1 + r^2/r_\rmn{c}^2\right)^{3 \beta}}\,
+  \mathcal{B}\left(\frac{1}{2}, 3\beta\right)
+  = j_{\nu,0} \left(1 + r^2/r_\rmn{c}^2\right)^{-3 \beta},
+\end{equation}
+where $\mathcal{B}$ denotes the beta function. Using ``isobaric CR model'' of
+the formalism suggested by \citet{2004A&A...413...17P} to compute the secondary
+radio emission and imposing the boundary condition to reproduce the observed
+radio emission profile uniquely determines $X_\CR(r)$. One of those realizations
+for the relative CR energy density $\tilde{X}_\CR(r) = \eps_\CR (r) /
+\eps_\rmn{th} (r)$ and $\tilde{X}_B(r) = \eps_B (r) / \eps_\rmn{th} (r)$ is
+shown in Figure 2 (lower left panel) of \citet{2004MNRAS.352...76P} which also
+has the interesting property to represent the minimum energy configuration that
+is able to reproduce the radio emission in the hadronic model.\footnote{Note
+  that a central magnetic field of $3\,\mu$G corresponds in the Coma cluster to
+  a relative magnetic energy density of $\tilde{X}_B=0.005$. For a CR population
+  in clusters that have been accelerated in structure formation shocks the
+  relativistic limit $E_\CR/E_\rmn{th} = 2 \bra P_\CR \ket / \bra P_\rmn{th}
+  \ket$ is not applicable since the CR pressure is dominated by the
+  trans-relativistic regime. This implies a somewhat harder equation of state
+  for the CRs with a larger adiabatic index and yields the relation
+  $E_\CR/E_\rmn{th} = 1.6 \bra P_\CR \ket / \bra P_\rmn{th} \ket$.}  The shaded
+regions indicate the logarithmic curvature at the minimum, showing that only
+modest additional energy investment would be needed to move the system by a
+factor two away from this energetically least expensive state which needs not to
+be realized in Nature.  The realization of the minimum energy magnetic field
+corresponds to a magnetic decline of $\alpha_B\simeq0.3$ and is close to
+equipartition with the CR proton pressure (but not that of the resulting
+secondary CR electrons).  It is generically true for weak magnetic fields
+($B<B_\rmn{CMB}$) in the outer parts of the Coma halo that the product
+$X_\CR(r)X_B(r)$ has to increase by a factor of about 100 toward the radio halo
+periphery to account for the observed extent.  If we were to adopt a steeper
+magnetic decline such as $\alpha_B=0.5$ which produces a flat $X_B(r)$, the
+relative CR pressure would have to rise accordingly by a factor of 100.
+
+2) Given this realization for $X_\CR$, we compute the pion decay gamma-ray
+surface brightness profile, integrate the flux within a radius of $\{0.13, 0.2,
+0.4\}$ degree, and scale the CR profile in order to match the corresponding
+VERITAS upper limits.  This scaling factor, $X_{\CR,0}$, depends on the CR
+spectral index, $\alpha$, (assuming a power-law CR population for simplicity) and
+the radial decline of the magnetic field, $\alpha_B$.
+
+3) In the last step, we scale the secondary radio emission profile linearly
+with $X_{\CR,0}$ and solve for $B_0$ subject to the boundary condition to match
+the observed synchrotron profile. Note that for $B_0 \gg B_\rmn{CMB}$ and radio
+spectral index, $\alpha_\nu$, the solution would be degenerate according to
+Eqn.~(\ref{eq:Lnu}). 
+
+Table~\ref{table:Bmin} shows the results on the lower limit of the central
+magnetic field that range from $B_0 = 0.4$ to $1.2\,\mu$G. There are a few
+interesting remarks in order.  (1) The hardest CR spectral indices are most
+constraining because of the tightest upper limits.  (2) For a steeper magnetic decline
+(larger $\alpha_B$), the CR number density needs to be larger to match the
+observed radio emission profiles which would yield a higher gamma-ray flux so
+that the upper limits are more constraining. This implies tighter lower limits for $B_0$.
+However, the largest choice of $\alpha_B=0.7$, which represents a flux-freezing
+magnetic field, is possibly too steep in the outer parts as it neglects the
+contributions from the turbulent dynamo in these dynamically active regions with
+large amounts of vorticity injection at corrugated structure formation shocks
+\citep[as observationally inferred for the first time
+by][]{2011ApJ...730...22P}.  (3) Interestingly, in all cases, we use the
+0.4$^\circ$ limit that is always most constraining for our choice of magnetic
+field configurations.  This is because we need a substantially increasing
+relative CR pressure profile to match the observed radio profiles (for a given
+magnetic realization); hence that CR realization produces a larger flux within
+0.4$^\circ$ in comparison to the ``isobaric CR model'' assumption ($X_\CR =
+\rmn{const.}$) for which the 0.2$^\circ$ upper limits are more constraining;
+hence the constraints on $B_0$ get better for the larger integration area.
+Physically, this can be achieved by considering (active) CR transport such as CR
+streaming which produces an increasing $X_\CR$-profile due to the larger
+available phase space in the outer cluster regions (or equivalently an
+incomplete turbulent pumping of CRs into the central regions).  Required
+streaming and turbulent pumping timescales match what is required to explain the
+observed radio halo bimodality when carefully considering the plasma physics in
+high-beta plasmas \citep{2011A&A...527A..99E}.
+
+
+As a final word, we note that the $X_\CR$-profiles always obey the energy
+condition, i.e., $P_\CR < P_\mathrm{th}$ over the entire range of the radio halo
+emission ($< 1$~Mpc) when assuming a central magnetic field of $B_0=3\,\mu$G
+that is at the lower 2-$\sigma$ interval bound inferred from Faraday RM
+\citep{2010A&A...513A..30B}. Typical values at 1 Mpc range from $X_\CR = 0.02$
+($\alpha_B=0.3$, $\alpha=2.1$) to $X_\CR = 1$ ($\alpha_B=0.7$,
+$\alpha=2.5$).\footnote{See Figure 3 in \citet{2004MNRAS.352...76P} for the
+  entire parameter range assuming minimum energy conditions and
+  \citet{2004A&A...413...17P}, Figure 7 for a parametrization as adopted in this
+  study.} We caution, however, that the minimum energy condition is violated at
+the outer radio halo boundary for the range of minimum magnetic field values
+inferred by this study.
+
+
+
 
 \section{Dark Matter}
 
 \section{Discussion}
 VERITAS observed the Coma cluster of galaxies for a total of 18.6 hours of high-quality live time between March and May in 2008. 
+
+
+Various approaches to model CR population and magnetic field distribution are
+complementary (so far just ideas, need to be formulated):
+\begin{itemize}
+\item simplified ``isobaric CR model'': simple and widely used in the
+  literature. A priori, physically not justified, old fashioned, should be
+  replaced by the approached below.
+\item simulation-based analytical approach: ``first principle approach'' that
+  predicts the CR and B distribution for a given set of assumptions. Powerful
+  since it only required the density profile as input, but limited in the
+  modeled physics (no active CR transport) that appears to be necessary to
+  explain the radio halo bimodality.
+\item pragmatic approach as employed in Sect.~\ref{sec:B}: model CR and B to
+  reproduce observed radio emission profile. Minimum energy conditions (or
+  equivalently equipartition arguments) represent a special case within this
+  approach. A priori, also physically not justified, but quite powerful as it
+  shows what the ``correct'' model has to achieve and can point into the
+  direction what the relevant physics has to deliever. Compare CR transport
+  vs. simulation inspired models
+\end{itemize}
+
 
 \acknowledgments
 This research was supported by grants from the U.S. Department of Energy, the U.S. National Science Foundation, and the Smithsonian Institution, by NSERC in Canada, by Science Foundation Ireland, and by STFC in the UK. We acknowledge the excellent work of the technical support staff at the FLWO and the collaborating institutions in the construction and operation of the instrument.
@@ -137,7 +522,13 @@ This research was supported by grants from the U.S. Department of Energy, the U.
 \begin{center}
 \scalebox{1.0}{\plotone{f5.eps}}
 \end{center}
-\caption{Cosmic-ray pressure, $X_{\mathrm{CR}}$, as a function of radial distance from the Coma cluster core.}
+\caption{CR-to-thermal pressure, $X_{\mathrm{CR}}\bra P_\CR \ket / \bra
+  P_\rmn{th} \ket$, as a function of radial distance from the Coma cluster
+  center. Model predictions are shown by dashed lines \citep{2010MNRAS.409..449P}
+  while these are scaled to match the most constraining VERITAS upper limits
+  within 0.2$^\circ$ (solid). We compare differential $X_\CR$-profiles (red) to
+  integrated profiles $X_\CR(<R/R_\rmn{vir})$ (blue) which we use to compare to
+  the upper limits.}
 \label{fig:xcr}
 \end{figure*}
 
@@ -197,6 +588,73 @@ NGC 4921 & 0 & -4 & -0.23 & - & - &  2.41 & (0.72\%)  & - & -
 \label{table:results}
 \end{deluxetable}
 \end{landscape}
+
+
+\begin{landscape}
+\begin{deluxetable}{cccccccccccc}
+\tablecolumns{12}
+\tablewidth{0pc}
+\tablecaption{Constraints on relative CR pressure and magnetic fields for different regions of interest in the Coma cluster of galaxies.}
+\tablehead{
+\colhead{RoI\tablenotemark{a} [deg]} 
+    & \colhead{$F_\rmn{sim}(E)$\tablenotemark{b}} & \colhead{$F_\rmn{sim}(>E)$\tablenotemark{c}} 
+    & \multicolumn{3}{c}{analytic model: $X_{\CR,\,\rmn{max}}~[\%]$\tablenotemark{d} } 
+    & \multicolumn{3}{c}{$F_{\gamma,\,\rmn{min}}(>E)$\tablenotemark{e}} 
+    & \multicolumn{3}{c}{$X_{\CR,\,\rmn{min}}~[\%]$\tablenotemark{f} } \\
+& & & \colhead{$\alpha=2.1$} & \colhead{$\alpha=2.3$} & \colhead{$\alpha=2.5$}
+    & \colhead{$\alpha=2.1$} & \colhead{$\alpha=2.3$} & \colhead{$\alpha=2.5$}
+    & \colhead{$\alpha=2.1$} & \colhead{$\alpha=2.3$} & \colhead{$\alpha=2.5$}
+}
+\startdata
+0.13 & -     & -    & 10   & 23 & 97 & 1.6 & 0.7 & 0.3 & 0.067 & 0.061 & 0.11 \\
+0.2  & 0.80  & 2.9  & 4.8  & 10 & 43 & 3.1 & 1.4 & 0.6 & 0.078 & 0.072 & 0.13 \\
+0.4  & 1.21  & 4.4  & 6.7  & 15 & 62 & 6.3 & 2.8 & 1.3 & 0.098 & 0.090 & 0.16
+\enddata
+\tablenotetext{a}{Intrinsic source radius (in the point source case, the radius got replaced by the PSF radius).}
+
+\tablenotetext{b}{Differential gamma-ray flux $E^2 dF/dE$ at $E=220$~GeV in
+  units of $10^{-6}$ GeV m$^{-2}$ s$^{-1}$ in the simulation-based analytic
+  model by \citet{2010MNRAS.409..449P}. }
+
+\tablenotetext{c}{Integrated gamma-ray flux $F(>E=220~\rmn{GeV})$ in units of
+  $10^{-9}$ ph. m$^{-2}$ s$^{-1}$ in the simulation-based analytical model by
+  \citet{2010MNRAS.409..449P}.} 
+
+\tablenotetext{c}{Constraint on the relative CR pressure, $X_\CR = \bra P_\CR\ket /
+  \bra P_\rmn{th}\ket$ that was assumed to be constant throught the cluster; calculated
+  according to \citet{2004A&A...413...17P}.}
+
+\tablenotetext{e}{Minimum gamma-ray flux $F_{\rmn{min}}(>E=220~\rmn{GeV}$ in units of
+  $10^{-10}$ ph. m$^{-2}$ s$^{-1}$ of the hadronic model described in the text.}
+
+\tablenotetext{f}{Minimum relative CR pressure, $X_{\CR,\,\rmn{min}} = F_{\rmn{min}}/F$ for energies
+  above $E=220~\rmn{GeV}$ of the hadronic model described in the text.}
+\label{table:constraints}
+\end{deluxetable}
+\end{landscape}
+
+
+
+\begin{deluxetable}{cccc}
+\tablecolumns{4}
+\tablewidth{0pc}
+\tablecaption{Constraints on magnetic fields in the hadronic model of the radio halo of Coma}
+\tablehead{
+\colhead{$\alpha_B$\tablenotemark{a}} &
+\multicolumn{3}{c}{Minimum magnetic field, $B_0~[\mu\rmn{G}]$\tablenotemark{a}}\\
+\colhead{} & \colhead{$\alpha=2.1$} & \colhead{$\alpha=2.3$} & \colhead{$\alpha=2.5$}
+}
+\startdata
+0.3 & 0.61 & 0.51 & 0.43 \\
+0.5 & 0.82 & 0.68 & 0.58 \\
+0.7 & 1.19 & 0.98 & 0.83 
+\enddata
+\tablenotetext{a}{The parameters of the magnetic field are the magnetic decline,
+  $\alpha_B$, and the central field strength, $B_0$, which are defined by $B(r) = B_0
+  \,[n_\rmn{e}(r)/n_\rmn{e}(0)]^{\alpha_B}$.}
+\label{table:Bmin}
+\end{deluxetable}
+
 
 \begin{deluxetable}{lcccccc}
 \tablecolumns{7}
