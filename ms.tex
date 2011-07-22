@@ -1,8 +1,6 @@
 \documentclass[12pt,manuscript]{aastex}
 %%\documentclass[twocolumn]{emulateapj}
 
-\usepackage{lscape}
-
 \def\del#1{{}}
 %\def\del#1{{\bf (DELETED TEXT)}}
 \def\C#1{#1}
@@ -190,7 +188,7 @@ As a final word, we note that the $X_{\CR}$ profiles always obey the energy cond
 ($\alpha_{B}=0.3$, $\alpha=2.1$) to $X_{\CR} = 1$ ($\alpha_{B}=0.7$,
 $\alpha=2.5$).\footnote{See Figure 3 in \citet{article:PfrommerEnsslin:2004a} for the entire parameter range assuming minimum energy conditions and \citet{article:PfrommerEnsslin:2004b}, Figure 7 for a parametrization as adopted in this study.} We caution, however, that the minimum-energy condition is violated at the outer radio halo boundary for the range of minimum magnetic-field values inferred by this study.
 
-\section{Dark Matter}
+\section{Emission from Dark Matter Annihilations}
 
 \section{Discussion}
 VERITAS observed the Coma cluster of galaxies for a total of 18.6 hours of high-quality live time between March and May in 2008. 
@@ -266,7 +264,8 @@ This research was supported by grants from the U.S. Department of Energy, the U.
 \tablehead{
 \colhead{Source} &
 \colhead{RA} &
-\colhead{Dec}}
+\colhead{Dec}
+}
 \startdata
 Core & \RA{12}{59}{48.7} & \Dec{+27}{58}{50.0}\\
 NGC 4889 & \RA{13}{00}{08.13} & \Dec{+27}{58}{37.03}\\
@@ -277,17 +276,18 @@ NGC 4921 & \RA{13}{01}{26.12} & \Dec{+27}{53}{09.59}\\
 \label{table:roi}
 \end{deluxetable}
 
-\begin{landscape}
 \begin{deluxetable}{lccccccccc}
 \tablecolumns{10}
 \tablewidth{0pc}
 \tablecaption{Flux upper limits for different regions of interest in the Coma cluster of galaxies and surroundings.}
+\rotate
 \tablehead{
 \colhead{Source} & \colhead{RoI\tablenotemark{a} [deg]} & \colhead{$N_{S}$} & \colhead{S\tablenotemark{b} [$\sigma$]} &
 \multicolumn{6}{c}{Flux U.L.\tablenotemark{c}} \\
 \colhead{} & \colhead{} & \colhead{} & \colhead{} & \multicolumn{2}{c}{$\alpha=2.1$} &
 \multicolumn{2}{c}{$\alpha=2.3$} &
-\multicolumn{2}{c}{$\alpha=2.5$}}
+\multicolumn{2}{c}{$\alpha=2.5$}
+}
 \startdata
 Core & 0 & 17 & 0.84 & 2.59 & (0.78\%) & 2.78 & (0.83\%) & 2.97 & (0.89\%) \\
 & 0.2 & -41 & -1.0 & 1.96 & (0.59\%)  & 2.09 & (0.63\%) & 2.21 & (0.66\%) \\
@@ -301,13 +301,13 @@ NGC 4921 & 0 & -4 & -0.23 & - & - &  2.41 & (0.72\%)  & - & -
 \tablenotetext{c}{99\% confidence level upper limit in units of $10^{-8}$ ph. m$^{-2}$ s$^{-1}$ calculated according to \citet{article:Rolke_etal:2005} above an energy threshold of 220 GeV, with corresponding fluxes in percent of the steady Crab Nebula flux in parenthesis.}
 \label{table:results}
 \end{deluxetable}
-\end{landscape}
 
-\begin{landscape}
 \begin{deluxetable}{cccccccccccc}
 \tablecolumns{12}
 \tablewidth{0pc}
 \tablecaption{Constraints on relative CR pressure in the Coma cluster core for different spatial extensions.} 
+\rotate
+\tabletypesize{\small}
 \tablehead{
 \colhead{RoI\tablenotemark{a} [deg]} 
     & \colhead{$F_\rmn{sim}(E)$\tablenotemark{b}} & \colhead{$F_\rmn{sim}(>E)$\tablenotemark{c}} 
@@ -325,13 +325,12 @@ NGC 4921 & 0 & -4 & -0.23 & - & - &  2.41 & (0.72\%)  & - & -
 \enddata
 \tablenotetext{a}{Intrinsic source radius (zero means point source), which is convolved with the analysis PSF.}
 \tablenotetext{b}{Differential gamma-ray flux $E^{2}dF/dE$ at $E=220$ GeV in units of $10^{-6}$ GeV m$^{-2}$ s$^{-1}$ in the simulation-based analytic model by \citet{article:PinzkePfrommer:2010}. }
-\tablenotetext{c}{Integrated gamma-ray flux $F(>E=220~\mathrm{GeV}$) in units of $10^{-9}$ ph. m$^{-2}$ s$^{-1}$ in the simulation-based analytical model by \citet{article:PinzkePfrommer:2010}.} 
-\tablenotetext{c}{Constraint on the relative CR pressure, $X_{\CR} = \expval{P_\CR}/ \expval{P_\rmn{th}}$ that was assumed to be constant throught the cluster; calculated according to \citet{article:PfrommerEnsslin:2004b}.}
-\tablenotetext{e}{Minimum gamma-ray flux $F_{\rmn{min}}(>E=220~\mathrm{GeV}$) in units of $10^{-10}$ ph. m$^{-2}$ s$^{-1}$ of the hadronic model described in the text.}
-\tablenotetext{f}{Minimum relative CR pressure, $X_{\CR,\,\rmn{min}} = F_{\rmn{min}}/F$ for energies above $E=220~\rmn{GeV}$ of the hadronic model described in the text.}
+\tablenotetext{c}{Integrated gamma-ray flux above $E=220~\rmn{GeV}$ in units of $10^{-9}$ ph. m$^{-2}$ s$^{-1}$; simulation-based analytical model by \citet{article:PinzkePfrommer:2010}.} 
+\tablenotetext{d}{Constraint on the relative CR pressure, $X_{\CR} = \expval{P_\CR}/ \expval{P_\rmn{th}}$, which was assumed to be constant through the cluster and calculated according to \citet{article:PfrommerEnsslin:2004b}.}
+\tablenotetext{e}{Minimum gamma-ray flux in units of $10^{-10}$ ph. m$^{-2}$ s$^{-1}$ of the hadronic model described in the text.}
+\tablenotetext{f}{Minimum relative CR pressure, $X_{\CR,\,\rmn{min}} = F_{\rmn{min}}/F$, for energies $E>220~\rmn{GeV}$ in the hadronic model described in the text.}
 \label{table:constraints}
 \end{deluxetable}
-\end{landscape}
 
 \begin{deluxetable}{cccc}
 \tablecolumns{4}
@@ -340,7 +339,8 @@ NGC 4921 & 0 & -4 & -0.23 & - & - &  2.41 & (0.72\%)  & - & -
 \tablehead{
 \colhead{$\alpha_{B}$} &
 \multicolumn{3}{c}{Minimum magnetic field, $B_0~[\mu\rmn{G}]$}\\
-\colhead{} & \colhead{$\alpha=2.1$} & \colhead{$\alpha=2.3$} & \colhead{$\alpha=2.5$}}
+\colhead{} & \colhead{$\alpha=2.1$} & \colhead{$\alpha=2.3$} & \colhead{$\alpha=2.5$}
+}
 \startdata
 0.3 & 0.61 & 0.51 & 0.43 \\
 0.5 & 0.82 & 0.68 & 0.58 \\
@@ -355,10 +355,20 @@ NGC 4921 & 0 & -4 & -0.23 & - & - &  2.41 & (0.72\%)  & - & -
 \tablewidth{0pc}
 \tablecaption{\emph{Fermi}-LAT upper limits for the Coma cluster core.}
 \tablehead{
-\colhead{Spatial model} & \multicolumn{6}{c}{Flux U.L.}
+\colhead{Spatial model} & \multicolumn{3}{c}{S[$\sigma$]} & \multicolumn{3}{c}{Flux U.L.} \\
+\colhead{} & \colhead{1-3 GeV} & \colhead{3-10 GeV} & \colhead{10-30 GeV} & 
+\colhead{1-3 GeV} & \colhead{3-10 GeV} & \colhead{10-30 GeV} \\
+\hline
+\multicolumn{7}{c}{Spectral index $\alpha=2.1$ (fixed)}
 }
 \startdata
-Point source & 1.73 & 1.81 & 0.487 & 0.526 & 0.627 & 0.635
+Point source & 0.30 & 0 & 1.3 & 1.73 & 4.87 & 0.627 \\
+Disk, $r=0.2^{\circ}$ & 0.65 & 0.22 & 2.0 & 2.03 & 0.691 & 0.783 \\
+Disk, $r=0.4^{\circ}$ & 0.77 & 0.18 & 2.3 & 2.39 & 0.757 & 0.847 \\
+\cutinhead{Spectral index $\alpha=2.5$ (fixed)}
+Point source & 0.33 & 0 & 1.42 & 1.81 & 0.526 & 0.635 \\
+Disk, $r=0.2^{\circ}$ & 0.66 & 0.35 & 2.1 & 2.12 & 0.748 & 0.785 \\
+Disk, $r=0.4^{\circ}$ & 0.80 & 0.36 & 2.4 & 2.50 & 0.833 & 0.849 \\
 \enddata
 \label{table:fermi}
 \end{deluxetable}
