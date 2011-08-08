@@ -1,5 +1,5 @@
 \documentclass[12pt,manuscript]{aastex}
-%%\documentclass[twocolumn]{emulateapj}
+%\documentclass[twocolumn]{emulateapj}
 
 \def\del#1{{}}
 %\def\del#1{{\bf (DELETED TEXT)}}
@@ -323,32 +323,43 @@ NGC 4921 & 0 & -4 & -0.23 & - & - &  2.41 & (0.72\%)  & - & -
     & \colhead{$\alpha=2.1$} & \colhead{$\alpha=2.3$} & \colhead{$\alpha=2.5$}
 }
 \startdata
-0 & -     & -    & 10   & 23 & 97 & 1.6 & 0.7 & 0.3 & 0.067 & 0.061 & 0.11 \\
+\multicolumn{12}{l}{VERITAS constraints:}\\
+0    & -     & -    & 10   & 23 & 97 & 1.6 & 0.7 & 0.3 & 0.067 & 0.061 & 0.11 \\
 0.2  & 0.80  & 2.9  & 4.8  & 10 & 43 & 3.1 & 1.4 & 0.6 & 0.078 & 0.072 & 0.13 \\
-0.4  & 1.21  & 4.4  & 6.7  & 15 & 62 & 6.3 & 2.8 & 1.3 & 0.098 & 0.090 & 0.16
+0.4  & 1.21  & 4.4  & 6.7  & 15 & 62 & 6.3 & 2.8 & 1.3 & 0.098 & 0.090 & 0.16 \\
+\hline
+\multicolumn{12}{l}{{\em Fermi} constraints:}\\
+0    & -  & -  & 3.2 & - & 3.0 & ~~3.5 & - & ~~6.4 & 0.067 & 0.061 & 0.11 \\
+0.2  & -  & -  & 2.3 & - & 2.1 & ~~6.8 & - &  12.5 & 0.078 & 0.072 & 0.13 \\
+0.4  & -  & -  & 1.7 & - & 1.5 &  13.5 & - &  25.0 & 0.098 & 0.090 & 0.16 \\
 \enddata
 \tablenotetext{a}{Intrinsic source radius (zero means point source), which is convolved with the analysis PSF.}
 \tablenotetext{b}{Differential gamma-ray flux $E^{2}dF/dE$ at $E=220$ GeV in units of $10^{-6}$ GeV m$^{-2}$ s$^{-1}$ in the simulation-based analytic model by \citet{article:PinzkePfrommer:2010}. }
 \tablenotetext{c}{Integrated gamma-ray flux above $E=220~\rmn{GeV}$ in units of $10^{-9}$ ph. m$^{-2}$ s$^{-1}$; simulation-based analytical model by \citet{article:PinzkePfrommer:2010}.} 
 \tablenotetext{d}{Constraint on the relative CR pressure, $X_{\CR} = \expval{P_\CR}/ \expval{P_\rmn{th}}$, which was assumed to be constant through the cluster and calculated according to \citet{article:PfrommerEnsslin:2004b}.}
-\tablenotetext{e}{Minimum gamma-ray flux in units of $10^{-10}$ ph. m$^{-2}$ s$^{-1}$ of the hadronic model described in the text.}
-\tablenotetext{f}{Minimum relative CR pressure, $X_{\CR,\,\rmn{min}} = F_{\rmn{min}}/F$, for energies $E>220~\rmn{GeV}$ in the hadronic model described in the text.}
+\tablenotetext{e}{Minimum gamma-ray flux of the hadronic model described in the
+  text. Values are in units of $10^{-10}$ ph. m$^{-2}$ s$^{-1}$ (VERITAS) and
+  $10^{-8}$ ph. m$^{-2}$ s$^{-1}$ {\em (Fermi)}.}
+\tablenotetext{f}{Minimum relative CR pressure, $X_{\CR,\,\rmn{min}} = F_{\rmn{min}}/F$ in the hadronic model described in the text.}
 \label{table:constraints}
 \end{deluxetable}
 
-\begin{deluxetable}{cccc}
+\begin{deluxetable}{ccccccc}
 \tablecolumns{4}
 \tablewidth{0pc}
-\tablecaption{Constraints on magnetic fields in the hadronic model of the radio halo of Coma cluster}
+\tablecaption{Constraints on magnetic fields in the hadronic model of the Coma radio halo}
 \tablehead{
-\colhead{$\alpha_{B}$} &
-\multicolumn{3}{c}{Minimum magnetic field, $B_0~[\mu\rmn{G}]$}\\
-\colhead{} & \colhead{$\alpha=2.1$} & \colhead{$\alpha=2.3$} & \colhead{$\alpha=2.5$}
+ &
+\multicolumn{6}{c}{Minimum magnetic field, $B_0~[\mu\rmn{G}]$}\\
+ & \multicolumn{3}{c}{VERITAS constraints:} & \multicolumn{3}{c}{{\em Fermi} constraints:} \\
+\colhead{$\alpha_{B}$}
+ & \colhead{$\alpha=2.1$} & \colhead{$\alpha=2.3$} & \colhead{$\alpha=2.5$}
+ & \colhead{$\alpha=2.1$} & \colhead{$\alpha=2.3$} & \colhead{$\alpha=2.5$}
 }
 \startdata
-0.3 & 0.61 & 0.51 & 0.43 \\
-0.5 & 0.82 & 0.68 & 0.58 \\
-0.7 & 1.19 & 0.98 & 0.83 
+0.3 & 0.61 & 0.51 & 0.43 & 1.26 & - & ~~2.69 \\
+0.5 & 0.82 & 0.68 & 0.58 & 1.75 & - & ~~4.44 \\
+0.7 & 1.19 & 0.98 & 0.83 & 2.75 & - &  14.6~ 
 \enddata
 \tablecomments{The parameters of the magnetic field are the magnetic decline, $\alpha_B$, and the central field strength, $B_{0}$, which are defined by $B(r) = B_{0}\,[n_\rmn{e}(r)/n_{\rmn{e}}(0)]^{\alpha_B}$.}
 \label{table:Bmin}
