@@ -29,16 +29,15 @@
 \affil{(the VERITAS collaboration)} 
 %%\email{nkarlsson@physics.umn.edu}
 \and
-\author{S. Federici\altaffilmark{3,4}, C. Pfrommer\altaffilmark{1,5,6},
-A. Pinzke\altaffilmark{7}}
+\author{S. Federici\altaffilmark{3,4}, C. Pfrommer\altaffilmark{1,5},
+A. Pinzke\altaffilmark{6}}
 
 \altaffiltext{1}{Corresponding authors: N. Karlsson, nkarlsson@physics.umn.edu \& C. Pfrommer, christoph.pfrommer@h-its.org}
 \altaffiltext{2}{School of Physics and Astronomy, University of Minnesota, Minneapolis, MN 55455, USA}
 \altaffiltext{3}{DESY, Platanenallee 6, 15738 Zeuthen, Germany}
 \altaffiltext{4}{Institut f\"ur Physik und Astronomie, Universit\"at Potsdam, 14476 Potsdam-Golm, Germany}
 \altaffiltext{5}{Heidelberg Institute	for Theoretical	Studies, Schloss-Wolfsbrunnenweg 35, D-69118 Heidelberg, Germany}
-\altaffiltext{6}{Canadian Institute for Theoretical Astrophysics, University of Toronto, Toronto, ON, M5S 3H8, Canada}
-\altaffiltext{7}{Department of Physics, University of California, Santa Barbara, CA 93106, USA}
+\altaffiltext{67}{Department of Physics, University of California, Santa Barbara, CA 93106, USA}
 
 %%\journalinfo{The Astrophysical Journal}
 %%\submitted{preprint}
@@ -53,22 +52,136 @@ The gamma-ray flux upper limits have been used to constrain the populations of c
 \keywords{cosmic rays --- gamma rays: observations --- gamma rays: VHE --- galaxies: clusters: general --- galaxies: clusters: individual: Coma (ACO 1656) --- dark matter --- magnetic fields}
 
 \section{Introduction}
-Clusters of galaxies are the largest observable structures in the Universe, with typical diameters of several Mpc and masses on the order of $10^{14}$ to $10^{15} M_{\odot}$. These gravitationally bound objects have formed on increasingly larger scales during the evolution of the Universe through the process of cosmic structure formation \citep{article:Voit:2005}. Although most of the cluster mass comes from large amounts of dark matter (DM) embedded in a cluster, as indicated by cluster dynamics and weak gravitational lensing \citep[][]{article:DiaferioSchindlerDolag:2008}, gas making up the intra-cluster medium (ICM) contributes about 15\% of the total cluster mass. Individual galaxies contribute only a small amount (about 5\%) to the cluster mass. The ICM gas mass also comprise a significant fraction of the observable (baryonic) matter in the Universe.
+Clusters of galaxies are the largest virialized objects in the Universe, with
+typical diameters of a few Mpc and masses on the order of $10^{14}$ to $10^{15}
+M_{\odot}$. According to the currently favored hierarchical model of cosmic
+structure formation, larger objects formed through successive mergers of smaller
+objects with galaxy clusters sitting a top this mass hierarchy \citep[see][for a
+review]{article:Voit:2005}. Most of the mass of a cluster is in form of dark
+matter (DM), as indicated by galaxy dynamics and gravitational lensing
+\citep[][]{article:DiaferioSchindlerDolag:2008}. Baryonic gas making up the
+intra-cluster medium (ICM) contributes about 15\% of the total cluster mass and
+individual galaxies account for the remainder (about 5\%). The ICM gas mass also
+comprises a significant fraction of the observable (baryonic) matter in the
+Universe.
 
-The ICM is a hot, $T\sim 10^{8}$ K, plasma emitting thermal bremsstrahlung radiation in the soft X-rays regime \citep[see, e.g.][]{article:Petrosian:2001}. Heating of this plasma is thought to come primarily from collisionless structure-formation shocks, due to accretion and merger processes. Such shocks and turbulences in the ICM gas and magnetic fields also provide a means to efficiently accelerate particles \citep[see, e.g.,][]{article:ColafrancescoBlasi:1998, article:Ryu_etal:2003}. Many clusters do indeed feature mega-parsec scale halos of non-thermal radio emission, indicative of a population of relativistic electrons and positrons (leptons) and magnetic fields permeating the ICM \citep{article:Cassano_etal:2010}. Recent observations of possible non-thermal emission from clusters in the the extreme ultraviolet \citep[EUV; ][]{article:SarazinLieu:1998} and hard X-rays \citep{article:RephaeliGruber:2002, article:Fusco-Femiano_etal:2004, article:Eckert_etal:2007} provide further indications of relativistic particle populations in clusters, although the interpretation of these observations have been disputed \citep[see, e.g.][]{article:Wik_etal:2009}.
+The ICM is a hot, $T\sim 10^{8}$ K, plasma emitting thermal bremsstrahlung
+radiation in the soft X-rays regime \citep[see,
+e.g.,][]{article:Petrosian:2001}. This plasma has been heated to these
+temperatures primarily through collisionless structure-formation shocks that
+form as a result of the hierarchical merging and accretion processes. Such
+shocks and turbulence in the ICM gas and intra-cluster magnetic fields also
+provide a means to efficiently accelerate particles \citep[see,
+e.g.,][]{article:ColafrancescoBlasi:1998, article:Ryu_etal:2003}. Many clusters
+do indeed feature mega-parsec scale halos of non-thermal radio emission,
+indicative of a population of relativistic electrons and positrons (leptons) and
+magnetic fields permeating the ICM \citep{article:Cassano_etal:2010}. Recent
+observations of possible non-thermal emission from clusters in the the extreme
+ultraviolet \citep[EUV; ][]{article:SarazinLieu:1998} and hard X-rays
+\citep{article:RephaeliGruber:2002, article:Fusco-Femiano_etal:2004,
+  article:Eckert_etal:2007} may provide further indications of relativistic
+particle populations in clusters, although the interpretation of these
+observations as non-thermal diffuse emission have been disputed on the basis of
+more sensitive observations \citep[see, e.g.,][]{2009ApJ...690..367A,
+  2010ApJ...725.1688A, article:Wik_etal:2009}.
 
-Galaxy clusters have for many years been proposed as sources of gamma rays. If shock acceleration in the ICM is an efficient process, a population of highly relativistic cosmic-ray (CR) hadrons, in the form of protons and heavy ions, in the ICM is to be expected. The main energy-loss mechanism for CR hadrons at high energies is pion production through the interaction of CRs with nuclei in the ICM. Pions are short lived and decay; the charged pions to electrons and positrons,\footnote{A charged pion decays to a muon or antimuon, which subsequently decay to an electron or positron.} and the neutral pion to gamma rays. Due to the low density of the ICM ($n_{\mathrm{ICM}}\sim 10^{-3}$ cm$^{-3}$) and the sheer size of a cluster, CR hadrons will be confined in the cluster on very long timescales \citep[][]{article:Volk_etal:1996, article:Berezinsky_etal:1997} allowing them to accumulate over time. 
+Galaxy clusters have for many years been proposed as sources of gamma rays. If
+shock acceleration in the ICM is an efficient process, a population of highly
+relativistic cosmic-ray (CR) hadrons, in the form of protons and heavy ions, in
+the ICM is to be expected. The main energy-loss mechanism for CR hadrons at high
+energies is pion production through the interaction of CRs with nuclei in the
+ICM. Pions are short lived and decay; the charged pions to electrons and
+positrons,\footnote{A charged pion decays to a muon or antimuon, which
+  subsequently decay to an electron or positron as well as neutrinos.} and the
+neutral pion to gamma rays. Due to the low density of the ICM
+($n_{\mathrm{ICM}}\sim 10^{-3}$ cm$^{-3}$), the large scales of a cluster and
+the volume filling magnetic fields in the ICM, CR hadrons will be confined in
+the cluster on timescales comparable and longer than the Hubble time
+\citep[][]{article:Volk_etal:1996, article:Berezinsky_etal:1997} allowing them
+to accumulate over time.  Depending on the CR pressure, quantified by the
+CR-to-thermal pressure fraction $X_\CR=\expval{
+  P_{\CR}}/\expval{P_{\mathrm{th}}}$, an observable flux of high-energy gamma
+rays can be expected.
 
-\paragraph{Rewrite this paragraph!}
-Depending on the CR energy density, quantified by the fraction of energy in CRs to the thermal energy in a cluster, $\eta=\expval{ E_{\mathrm{CR}}/E_{\mathrm{th}}}$, an observable flux of high-energy gamma rays can be expected. This fraction could plausibly be as large as 50\% \citep{article:Ryu_etal:2003}, but a much smaller fraction of only a few percent is required in order to produce a gamma-ray flux observable with current generation gamma-ray telescopes. 
+Moreover, a substantial value of $X_\CR$ can bias hydrostatic cluster masses as
+well as the temperature decrement of the CMB in the direction of a galaxy
+cluster due to the Sunyaev-Zel'dovich effect which is proportional to the
+line-of-sight integral of the thermal electron pressure. This could then
+severely jeopardize the use of clusters to determine cosmological
+parameters. Comparing X-ray and optical potential profiles in the centers of
+galaxy clusters yields an upper limit of 20--30 \% of non-thermal pressure (that
+can be composed of CRs, magnetic fields or turbulence) relative to the thermal
+gas pressure \cite{2008MNRAS.388.1062C, 2010MNRAS.404.1165C}. An analysis that
+compares spatially resolved weak gravitational lensing and hydrostatic X-ray
+masses for a sample of 18 galaxy clusters detects a deficit of the hydrostatic
+in comparison to the lensing mass of $20 \%$ at $R_{500}$ -- within which the
+mean density is 500 times the critical density -- suggesting again a substantial
+non-thermal pressure contribution on large scales
+\citep{2008MNRAS.384.1567M}. High-energy gamma-ray emission is a complementary
+method of constraining the pressure contribution of CRs that is most sensitive
+to the cluster core region. However, it assumes that the CR component is fully
+mixed with the ICM and almost insensitive in detecting a two-phase structure of
+CRs and the thermal ICM.  A fraction $X_\CR$ of only a few percent is required
+in order to produce a gamma-ray flux observable with current generation
+gamma-ray telescopes rendering this technique at least as sensitive as the
+dynamical and hydrostatic method (which are however more general in that they
+are sensitive to any non-thermal pressure component).
 
-Gamma-ray emission can also be produced by Compton up-scattering of ambient photons, for example cosmic microwave background (CMB) photons, on ultra-relativistic leptons. Those leptons can either be secondaries from the above mentioned CR interactions or be injected into the ICM by powerful cluster members and be further accelerated by diffusive shock acceleration or turbulent reacceleration processes.
+Gamma-ray emission can also be produced by Compton up-scattering of ambient
+photons, for example cosmic microwave background (CMB) photons, on
+ultra-relativistic leptons. Those leptons can either be secondaries from the
+above mentioned CR interactions or be injected into the ICM by powerful cluster
+members and be further accelerated by diffusive shock acceleration or turbulent
+reacceleration processes.
 
-A third mechanism for gamma-ray production in a galaxy cluster is self-annihilation of a DM particle, e.g. a weakly interacting massive particle (WIMP). As already mentioned, about 80\% of the cluster mass is in the form of dark matter. Recent works \citep{article:EvansFerrerSarkar:2004, article:BergstromHooper:2006} have shown that the gamma-ray emissivity from DM annihilations is expected to be proportional to the DM density along the line of sight, making clusters of galaxies potentially good candidates for DM searches. This despite their large distances compared to other common targets for DM searches, such as dwarf spheriodal galaxies \citep{article:Strigari_etal:2007, article:Acciari_etal:2010, article:Aliu_etal:2009} or the Galactic center \citep{article:Kosack_etal:2004, article:Aharonian_etal:2006, article:Aharonian_etal:2009b}.  
+A third mechanism for gamma-ray production in a galaxy cluster is
+self-annihilation of a DM particle, e.g. a weakly interacting massive particle
+(WIMP). As already mentioned, about 80\% of the cluster mass is in the form of
+dark matter. Recent works \citep{article:EvansFerrerSarkar:2004,
+  article:BergstromHooper:2006} have shown that the gamma-ray emissivity from DM
+annihilations is expected to be proportional to the square of the DM density
+integrated along the line of sight, making clusters of galaxies potentially good
+candidates for DM searches \cite{article:PinzkePfrommerBergstrom2009,
+  2011ApJ...726L...6C}. This despite their large distances compared to other
+common targets for DM searches, such as dwarf spheroidal galaxies
+\citep{article:Strigari_etal:2007, article:Acciari_etal:2010,
+  article:Aliu_etal:2009} or the Galactic center
+\citep{article:Kosack_etal:2004, article:Aharonian_etal:2006,
+  article:Aharonian_etal:2009b}.
 
-While several observations of clusters of galaxies have been made with satellite-borne and ground-based telescopes, a detection of gamma-ray emission from a cluster has yet to be made.  Observations with EGRET \citep{article:Sreekumar_etal:1996, article:Reimer_etal:2003} and the Fermi Gamma-ray Space Telescope \citep{article:Ackermann_etal:2010} have provided upper limits on the gamma-ray fluxes (typically $\sim10^{-9}$ ph cm$^{2}$ s$^{-1}$ for Fermi observations) for several galaxy clusters in the MeV to GeV band. Upper limits on the VHE gamma-ray flux from a few select clusters, including the Coma cluster, have been provided by observations with ground-based imaging atmospheric Cherenkov telescopes \citep[IACTs;][]{article:Perkins_etal:2006, inproc:Perkins_etal:2008, article:Aharonian_etal:2009a, article:Aleksic_etal:2010}.
+While several observations of clusters of galaxies have been made with
+satellite-borne and ground-based telescopes, a detection of gamma-ray emission
+from a cluster has yet to be made.  Observations with EGRET
+\citep{article:Sreekumar_etal:1996, article:Reimer_etal:2003} and the Fermi
+Gamma-ray Space Telescope \citep{article:Ackermann_etal:2010} have provided
+upper limits on the gamma-ray fluxes (typically $\sim10^{-9}$ ph cm$^{2}$
+s$^{-1}$ for Fermi observations) for several galaxy clusters in the 100 MeV to GeV
+band. Upper limits on the VHE gamma-ray flux from a few select clusters,
+including the Coma cluster, have been provided by observations with ground-based
+imaging atmospheric Cherenkov telescopes
+\citep[IACTs;][]{article:Perkins_etal:2006, inproc:Perkins_etal:2008,
+  article:Aharonian_etal:2009a, article:Aleksic_etal:2010}.
 
-The Coma cluster of galaxies (ACO 1656) is one of the most thoroughly studied clusters over all wavelengths \citep{article:Voges_etal:1999}. Located at a distance of about 100 Mpc \citep[$z=0.023$;][]{article:StrubleRood:1999}, it is one of the closest and also one of the most massive clusters \citep[$M \sim 10^{15}M_{\odot}$;][]{article:Smith:1983, article:Kubo_etal:2008}. It hosts both a giant radio halo \citep{article:Giovannini_etal:1993,article:Thierbach_etal:2003} and peripheral radio relic, which appears connected to the radio halo with a ``diffuse'' bridge \citep[see discussion in][]{article:BrownRudnick:2010}. It has been suggested that the relic is an infall shock \citep{article:Ensslin_etal:1998} and successively demonstrated by cosmological simulations that model the non-thermal emission processes \citep{article:PfrommerEnsslinSpringel:2008, article:Pfrommer:2008, article:Battaglia_etal:2009, article:Skillman_etal:2011}. Extended soft X-ray (SXR) emission is evident from the ROSAT all-sky survey in the 0.1 to 2.4 keV band \citep{article:BrielHenryBohringer:1992} and observations with XMM-Newton \citep{article:Briel_etal:2001} revealed substructure in the X-ray halo. As such it is a natural candidate for gamma-ray observations. 
+The Coma cluster of galaxies (ACO 1656) is one of the most thoroughly studied
+clusters over all wavelengths \citep{article:Voges_etal:1999}. Located at a
+distance of about 100 Mpc \citep[$z=0.023$;][]{article:StrubleRood:1999}, it is
+one of the closest massive clusters \citep[$M \sim
+10^{15}M_{\odot}$;][]{article:Smith:1983, article:Kubo_etal:2008}. It hosts both
+a giant radio halo
+\citep{article:Giovannini_etal:1993,article:Thierbach_etal:2003} and peripheral
+radio relic, which appears connected to the radio halo with a ``diffuse'' bridge
+\citep[see discussion in][]{article:BrownRudnick:2010}. It has been suggested
+that the relic is an infall shock \citep{article:Ensslin_etal:1998} and
+successively demonstrated by cosmological simulations that model the non-thermal
+emission processes \citep{article:PfrommerEnsslinSpringel:2008,
+  article:Pfrommer:2008, article:Battaglia_etal:2009,
+  article:Skillman_etal:2011}. Extended soft thermal X-ray (SXR) emission is
+evident from the ROSAT all-sky survey in the 0.1 to 2.4 keV band
+\citep{article:BrielHenryBohringer:1992} and observations with XMM-Newton
+\citep{article:Briel_etal:2001} revealed substructure in the X-ray halo with
+substantial turbulent pressure support that shows a lower limit of $\sim 10 \%$
+of the total intracluster medium pressure \cite{2004A&A...426..387S}. As such it
+is a natural candidate for gamma-ray observations.
 
 In this article, results from the VERITAS observations of the Coma cluster of galaxies are reported, 
 together with the resulting constraints on cosmic-ray particle populations, magnetic fields, and dark matter in the cluster. Throughout the analysis, a present day Hubble constant of $H_{0} = 100h$ km s$^{-1}$ Mpc$^{-1}$ with $h=0.7$ has been used.
