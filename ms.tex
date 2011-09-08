@@ -183,20 +183,30 @@ magnetic-field values inferred by this study.
 \section{Emission from Dark Matter Annihilations}
 As already mentioned in the introduction, most of the mass in a galaxy cluster is in the form of DM. While the nature of this DM remains unknown, the most compelling theoretical candidate is a WIMP. The self-annihilations of WIMPs are expected to produce a flux of secondary gamma rays with a spectral signature that deviates significantly from the power-law spectrum observed in most conventional astrophysical sources. The spectrum will also feature a very sharp cutoff at the WIMP mass. Observations of these spectral features together with the expected difference in spatial distribution of the gamma-ray flux compared to conventional astrophysical sources allows for a unique means to indirectly detect DM.
 
-The gamma-ray flux due to self-annihilations of WIMPs is given by 
+The expected gamma-ray flux due to self-annihilations of WIMPs is given by 
 \begin{equation}
-\frac{dN(\Delta\Omega)}{dE}=\frac{\expval{\sigma v}}{8\pi m_{\chi}^{2}}\left[\frac{dN(E,m_{\chi})}{dE}\right]\int_{\Delta\Omega}d\Omega\int d\lambda \rho^{2}(\lambda,\Omega),
+\frac{d\Phi_{\gamma}(\Delta\Omega,E)}{dE}=\frac{\expval{\sigma v}}{8\pi m_{\chi}^{2}}\frac{dN(E,m_{\chi})}{dE} J(\Delta\Omega),
 \label{eqn:WIMPflux}
 \end{equation}
-where $\expval{\sigma v}$ is the thermally averaged product of the total self-annihilation cross section and the WIMP velocity, $m_{\chi}$ is the WIMP mass, $dN(E,m_{\chi})/dE$ is the gamma-ray yield per annihilation, $\Delta\Omega$ is the observed solid angle, $\rho$ is the DM mass density, and $\lambda$ is the line-of-sight distance to the integration volume.
+where $\expval{\sigma v}$ is the thermally averaged product of the total self-annihilation cross section and the WIMP velocity, $m_{\chi}$ is the WIMP mass, $dN(E,m_{\chi})/dE$ is the differential gamma-ray yield per annihilation, $\Delta\Omega$ is the observed solid angle, and $J$ is the astrophysical factor - a dimensionless factor which determines the DM annihilation rate and depends on the DM distribution.
 
-The two integrals in Eq. (\ref{eqn:WIMPflux}) results in a dimensionless factor representing the astrophysical contribution to the flux
+Given the upper limit on the observed gamma-ray rate, $R_{\gamma}(95\%\ \mathrm{CL})$, we can place constraints on the WIMP parameter space $(m_{\chi}, \expval{\sigma v})$. From Eq. (\ref{eqn:WIMPflux}) we get
+\begin{equation}
+\expval{\sigma v}(95\%\ \mathrm{CL}) > R_{\gamma}(95\%\ \mathrm{CL}) \frac{8\pi m_{\chi}^{2}}{J(\Delta\Omega)}\frac{1}{\int^{m_{\chi}} dE A_{\mathrm{eff}}dN_{\gamma}/dE}
+\end{equation}
+
+The astrophysical factor $J$ can be expressed as
 \begin{equation}
 J(\Delta\Omega)=\left(\frac{1}{\rho_{c}^{2}R_{H}}\right) \int_{\Delta\Omega}d\Omega\int d\lambda \rho^{2}(\lambda,\Omega),
 \end{equation}
-which here has been normalized to the square of the critical density, $\rho_{c}$, and the Hubble radius, $R_{H}$.
+where $\lambda$ represents the line-of-sight. Because the self-annihilation of a WIMP is a two-body process, $J(\Delta\Omega)$ is proportional to the square of the DM density $\rho$. Here, $J(\Delta\Omega)$ has been normalized to the square of the critical density, $\rho_{c}$, and the Hubble radius, $R_{H}$. Because 
 
-Given the upper limit on the observed gamma-ray rate, $R_{\gamma}(95\%\mathrm{CL})$, we can place constraints on the WIMP parameter space $(m_{\chi}, \expval{\sigma v})$. 
+
+In this work we have adopted the DM density profile by Navarro-Frenk-White \citep[NFW;][]{article:NavarroFrenkWhite:1997},
+\begin{equation}
+\rho_{\chi}(r)=\rho_{s}\left(\frac{r}{r_{s}}\right)^{-1}\left(1+\frac{r}{r_{s}}\right)^{-2},
+\end{equation} 
+which parameterizes the distribution of DM by the scale radius $r_{s}$ and the scale density $\rho_{s}$. [how where these calculated?]
 
 %When the size of the integration region is increased, the limits on $\expval{\sigma v}$ result from a competition between the gain in the astrophysical factor $\expval{J}$ and the integrated background. For integration regions larger than 0.2$^{\circ}$ in radius, the astrophysical factor no longer compensate for the increased count of background events and the signal-to-noise deteriorates. 
 
@@ -439,6 +449,7 @@ Disk, $r=0.4^{\circ}$ & 0.80 & 0.36 & 2.4 & 2.50 & 0.833 & 0.849 \\
 0.4 & $9.4\times 10^{16}$ & $1.3\times 10^{15}$ ($\simeq0.01\expval{J}_{\rmn{signal}}$, negligible)
 \enddata
 \tablecomments{$\expval{J}_{\rmn{bkg}}$ is the astrophysical factor calculated for the background region (ring method) and is used to estimate the level of gamma-ray contamination from DM.}
+\label{table:astrofactor}
 \end{deluxetable}
 
 \begin{deluxetable}{lccc}
@@ -457,9 +468,10 @@ $b\bar{b}$ & 0 & 3500 & $1.2\times 10^{-20}$ \\
 & 0.4 & 3500 & $8.7\times 10^{-21}$ \\
 $\tau^{+}\tau^{-}$ & 0 & 670 & $2.4\times 10^{-21}$ \\
 & 0.2 & 650 & $9.1\times 10^{-22}$ \\
-& 0.4 & 660 & $1.8\times 10^{-21}$ \\
+& 0.4 & 660 & $1.8\times 10^{-21}$
 \enddata
-\tablecomments{Limits are for different integration regions and DM particle mass $m_{\chi}$ derived from the VERITAS gamma-ray flux upper limits presented in this work.}
+\tablecomments{Upper limits are for different integration regions and DM particle mass $m_{\chi}$ derived from the VERITAS gamma-ray flux upper limits presented in this work.}
+\label{table:DMlimits}
 \end{deluxetable}
 
 \end{document}
