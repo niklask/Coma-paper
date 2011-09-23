@@ -654,71 +654,69 @@ emission.
 
 \section{Emission from Dark Matter Annihilations}
 As already mentioned in the introduction, most of the mass in a galaxy cluster is in the form of
-DM. While the nature of this DM remains unknown, the most compelling theoretical candidate is a
-WIMP. The self-annihilations of WIMPs are expected to produce a flux of secondary gamma rays with a
-spectral signature that deviates significantly from the power-law spectrum observed in most
-conventional astrophysical sources. The spectrum will also feature a very sharp cutoff at the WIMP
-mass. Observations of these spectral characteristics together with the expected difference in spatial
-distribution of the gamma-ray intensity compared to conventional astrophysical sources allows for a
-an indirect detection DM.
+DM. While the nature of DM remains unknown, the most compelling theoretical candidate is a
+WIMP. The self-annihilations of WIMPs are expected to produce secondary gamma rays with a
+spectral signature that deviates significantly from the power-law spectra observed from most
+conventional astrophysical sources. The spectrum will also feature a sharp cutoff at the WIMP
+mass. These spectral features together with the expected difference in the
+intensity distribution compared to conventional astrophysical sources allow an
+indirect detection of DM.
 
-The expected gamma-ray flux due to self-annihilations of WIMPs is given by 
+The expected gamma-ray flux due to self-annihilations of WIMPs is given by
 \begin{equation}
 \frac{d\Phi_{\gamma}(\Delta\Omega,E)}{dE}=
-\frac{\expval{\sigma v}}{8\pi m_{\chi}^{2}}\frac{dN(E,m_{\chi})}{dE} J(\Delta\Omega),
+\frac{\expval{\sigma v}}{8\pi m_{\chi}^{2}}\,N_\gamma (E)\, J(\Delta\Omega),
 \label{eqn:WIMPflux}
 \end{equation}
-where $\expval{\sigma v}$ is the thermally averaged product of the total self-annihilation cross
-section and the WIMP velocity, $m_{\chi}$ is the WIMP mass, $dN(E,m_{\chi})/dE$ is the differential
-gamma-ray yield per annihilation,\footnote{In this work, we have calculated the differential
-gamma-ray yield per annihilation using the Pythia Monte Carlo simulator.} $\Delta\Omega$ is the
+where $\expval{\sigma v}$ is the thermally-averaged product of the total self-annihilation cross
+section and the WIMP velocity, $m_{\chi}$ is the WIMP mass, $N_\gamma (E)$ is the differential
+gamma-ray yield per annihilation\footnote{In this work, we have calculated the differential
+gamma-ray yield per annihilation using the Pythia Monte-Carlo simulator.}, $\Delta\Omega$ is the
 observed solid angle, and $J$ is the astrophysical factor - a dimensionless factor which determines
 the DM annihilation rate and depends on the DM distribution.
 
 Given the upper limit on the observed gamma-ray rate,
-$R_{\gamma}(95\%\ \mathrm{CL}) = N_{\gamma}(95\%\ \mathrm{CL}) / T_{\mathrm{obs}}$, we can place
+$R_{\gamma}(99\%\ \mathrm{CL}) = N_{\gamma}(99\%\ \mathrm{CL}) / T_{\mathrm{obs}}$, we can place
 constraints on the WIMP parameter space $(m_{\chi}, \expval{\sigma v})$. From Eq.
-(\ref{eqn:WIMPflux}) we get
+(\ref{eqn:WIMPflux}) we find
 \begin{equation}
-\expval{\sigma v}(95\%\ \mathrm{CL}) > 
-R_{\gamma}(95\%\ \mathrm{CL}) \frac{8\pi m_{\chi}^{2}}{J(\Delta\Omega)}
-\frac{1}{\int^{m_{\chi}} dE A_{\mathrm{eff}}dN_{\gamma}/dE}
+\expval{\sigma v}(99\%\ \mathrm{CL}) <
+R_{\gamma}(99\%\ \mathrm{CL})\, \frac{8\pi m_{\chi}^{2}}{J(\Delta\Omega)}\,
+\frac{1}{\int^{m_{\chi}} dE\ A_{\mathrm{eff}}\,N_\gamma (E)}
 \end{equation}
 Because the self-annihilation of a WIMP is a two-body process, the astrophysical factor
 $J(\Delta\Omega)$ can be expressed as the line-of-sight integral of the DM density squared
 \begin{equation}
 J(\Delta\Omega)=\left(\frac{1}{\rho_{c}^{2}R_{H}}\right)
-\int_{\Delta\Omega}d\Omega\int d\lambda \rho^{2}(\lambda,\Omega),
+\int_{\Delta\Omega}d\Omega\int d\lambda\ \rho^{2}(\lambda,\Omega),
 \end{equation}
 where $\lambda$ represents the line-of-sight. Here,
 $J(\Delta\Omega)$ has been normalized to the square of the critical density, $\rho_{c}$, and the
 Hubble radius, $R_{H}$. In this work we have adopted the DM density profile by
-Navarro-Frenk-White \citep[NFW;][]{article:NavarroFrenkWhite:1997},
+\citet{article:NavarroFrenkWhite:1997},
 \begin{equation}
 \rho_{\chi}(r)=\rho_{s}\left(\frac{r}{r_{s}}\right)^{-1}\left(1+\frac{r}{r_{s}}\right)^{-2},
-\end{equation} 
+\end{equation}
 which parametrizes the distribution of DM by the scale radius $r_{s}$ and the scale density
-$\rho_{s}$.  Weak-lensing measurements of the virial mass in the Coma cluster
-\citep{article:Gavazzi_etal:2009} yield for these parameters $r_{s}=0.654$ Mpc and
+$\rho_{s}$. Using weak-lensing measurements of the virial mass in the Coma cluster
+\citep{article:Gavazzi_etal:2009} we find for these parameters $r_{s}=0.654$ Mpc and
 $\rho_{s}=4.4\times 10^{4}$ M$_{\odot}$/Mpc$^{3}$. Table \ref{table:astrofactor} lists the
-astrophysical factor calculated for the different VERITAS apertures considered in this work.
-It also lists the astrophysical factor calculated for the background region, which has been used
+astrophysical factors calculated for the different VERITAS apertures considered in this work.
+It also lists the astrophysical factor calculated for the background region, which is used
 to estimate the gamma-ray contamination due to DM in the background region.
 
 The resulting exclusion regions in the $(\expval{\sigma v}, m_{\chi})$ parameter space are shown in
 Figure \ref{fig:dm} for three different DM self-annihilation channels: W$^{+}$W$^{-}$,
-b$\bar{\mathrm{b}}$, and $\tau^{+}\tau^{-}$. Depending on the chosen aperture the limits are on
+b$\bar{\mathrm{b}}$, and $\tau^{+}\tau^{-}$. Depending on the chosen aperture, the limits are on
 the order of $10^{-20}$ to $10^{-21}$ cm$^{3}$ s$^{-1}$. The numerical values for each of the channels
 are listed in Table \ref{table:DMlimits}. We note that these are based on conservative estimates of the
 astrophysical factor $J$, as we do not assume boosting by clumping or the Sommerfeld effect.
 
 We also note that when the size of the integration region is increased, the limits on $\expval{\sigma v}$
 result from a competition between the gain in the astrophysical factor $\expval{J}$ and the integrated
-background. For integration regions larger than 0.2$^{\circ}$ in radius, the astrophysical factor
-no longer compensate for the increased count of background events and the signal-to-noise
-deteriorates. 
-
-
+background. For integration regions larger than 0.2$^{\circ}$ in radius, the astrophysical factors
+no longer compensate for the increased number of background events, and the signal-to-noise
+deteriorates.
 
 %
 %
