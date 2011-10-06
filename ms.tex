@@ -482,11 +482,13 @@ concave CR spectrum found in the simulations.
 
 \subsection{Minimum gamma-ray flux}
 \label{sec:Fmin}
-For clusters that host radio halos we can derive a minimum gamma-ray flux in the hadronic
-model of radio halos -- where the radio-emitting electrons are secondaries from CR interactions. 
-Hadronic interactions channel about the same power into secondary electrons and $\pi^{0}$-decay
-gamma rays. A stationary distribution of CR electrons loses all its energy to
-synchrotron radiation for strong magnetic fields ($B \gg B_{\rmn{CMB}} \simeq 3.2 \mu$G), and thus the
+
+For clusters that host radio halos we can derive a minimum gamma-ray flux in the hadronic model of
+radio halos -- where the radio-emitting electrons are secondaries from CR interactions.  Hadronic
+interactions channel about the same power into secondary electrons and $\pi^{0}$-decay gamma rays. A
+stationary distribution of CR electrons loses all its energy to synchrotron radiation for strong
+magnetic fields ($B \gg B_\rmn{CMB} \simeq 3.2 \mu$G, where $B_\rmn{CMB}$ is the equivalent magnetic
+field strength of the CMB so that $B_\rmn{CMB}^2/8\pi$ equals the CMB energy density). Thus the
 ratio of gamma-ray to synchrotron flux becomes independent of the spatial distribution of CRs and
 thermal gas \citep{article:Voelk:1989, article:Pohl:1994, article:Pfrommer:2008}, in particular with
 $\alpha_{\nu}\simeq 1$ as the observed synchrotron spectral index.  Hence we can derive a minimum
@@ -596,13 +598,17 @@ $B_{0}$.
 We then solve for $B_{0}$ while matching the observed synchrotron profile and fixing the profile
 of $X_{\CR}(r)$ as determined through the previous two steps. Note
 that for $B_{0} \gg B_{\rmn{CMB}}$ and a radio spectral index of $\alpha_{\nu}=1$, the solution
-would be degenerate.
+would be degenerate since the luminosity of the radio halo scales as
+\begin{equation}
+\label{eq:Lnu}
+L_{\nu} \propto \int dV Q(E)\,\frac{B^{1+\alpha_\nu}}{B^2 + B_{\rmn{CMB}}^2} \to \int dV Q(E),
+\end{equation}
+where $Q(E)$ denotes the electron source function.
 
-\item
-Inverse Compton cooling of CR electrons on CMB photons introduces a characteristic scale of
-$B_{\rmn{CMB}}\simeq 3.2\,\mu$G which imprints as a non-linearity on the synchrotron emissivity as a
-function of magnetic field strength. Hence we have to iterate through the previous steps until our
-solution for the minimum magnetic field $B_{0}$ is converged.
+\item Inverse Compton cooling of CR electrons on CMB photons introduces a characteristic scale of
+  $B_{\rmn{CMB}}\simeq 3.2\,\mu$G which imprints as a non-linearity on the synchrotron emissivity as
+  a function of magnetic field strength (see Eqn.~(\ref{eq:Lnu})). Hence we have to iterate through
+  the previous steps until our solution for the minimum magnetic field $B_{0}$ is converged.
 \end{enumerate}
 
 Table \ref{table:Bmin} shows the resulting lower limit of the central magnetic field that range from
