@@ -123,9 +123,9 @@ in the ICM is an efficient process, a population of highly relativistic CR proto
 to be expected in the ICM. The main energy-loss mechanism for CR hadrons at high energies is pion
 production through the interaction of CRs with nuclei in the ICM. Pions are short lived and decay,
 the charged pions to electrons and positrons,\footnote{A charged pion decays to a muon or antimuon,
-  which subsequently decays to an electron or positron as well as neutrinos.} and the neutral pion to
+which subsequently decays to an electron or positron as well as neutrinos.} and the neutral pion to
 gamma rays. Due to the low density of the ICM ($n_{\mathrm{ICM}}\sim 10^{-3}$ cm$^{-3}$), the large
-size of a cluster and the volume-filling magnetic fields in the ICM, CR hadrons will be confined in
+size and the volume-filling magnetic fields in the ICM, CR hadrons will be confined in
 the cluster on timescales comparable to or longer than the Hubble time
 \citep[][]{article:Volk_etal:1996, article:Berezinsky_etal:1997} allowing them to accumulate. For a
 given CR distribution function, the hadronically induced gamma-ray flux is directly proportional to
@@ -236,13 +236,14 @@ and selection, all shower images are calibrated and cleaned. Showers are then re
 events with at least two contributing telescope images that pass the following quality selection
 criteria: more than four participating pixels in the camera, number of photoelectrons in the image
 is larger than 75, and the distance from the image centroid to the center of the camera is less
-than $1.43^{\circ}$. These quality selection criteria impose an energy threshold\footnote{Defined
-as the energy corresponding to the maximum of the product function of the observed spectrum with
-the collection area.} of about 220 GeV. In addition, events for which only images from the two
-closest-spaced telescopes\footnote{In the array configuration prior to summer 2009, two telescopes 
-had a separation of only 35 m.} survive quality selection are rejected, as they introduce an
-irreducible high background rate, due to local muons, degrading the instrument sensitivity
-\citep{article:MaierKnapp:2007}.
+than $1.43^{\circ}$. These quality selection criteria impose an energy threshold\footnote{The energy
+threshold is defined as the energy corresponding to the maximum of the product function of the
+observed spectrum with the collection area. It does not vary significantly for the different source
+scenarios and assumed spectral indices reported in this work.} of about 220 GeV. In addition,
+events for which only images from the two closest-spaced telescopes\footnote{In the arra
+configuration prior to summer 2009, two telescopes  had a separation of only 35 m.} survive quality
+selection are rejected, as they introduce an irreducible high background rate, due to local muons, 
+degrading the instrument sensitivity \citep{article:MaierKnapp:2007}.
 
 Gamma-ray like events are separated from the CR background by imposing cuts on scaled parameters
 \citep{article:Aharonian_etal:1997, article:Krawczynski_etal:2006} calculated from a parametrized
@@ -251,7 +252,8 @@ used in this analysis were optimized a priori for a weak point source (3\% Crab 
 and a photon index of 2.4 using data taken on the Crab Nebula during the same epoch. Because the VHE
 gamma-ray spectrum for the Coma cluster is expected to be hard, with a photon index of about 2.3
 \citep{article:PinzkePfrommer:2010}, these cuts are suitable for the analysis of the Coma cluster
-data set.
+data set. It is noted that slightly varying the spectral index ($\pm$ 0.2) does not significantly
+impact the cuts used for quality selection cuts and gamma-hadron separation in this work. 
 
 The Coma cluster is a very rich cluster of galaxies with many plausible sites for gamma-ray
 emission: the core region, the peripheral radio relic, as well as individual powerful cluster
@@ -270,7 +272,7 @@ The ring background model \citep{article:Aharonian_etal:2001} is used to estimat
 due to CRs misinterpreted as gamma rays (the cuts described above reject more than 99\% of all
 CRs). The total number of events in a given region of interest is then compared to the estimated
 background from the off-source region scaled by the ratio of the solid angles to produce a final
-excess. The VHE gamma-ray significance is then calculated using the method by
+excess. The VHE gamma-ray significance is then calculated according to Formula 17 in
 \citet{article:LiMa:1983}. Significance skymaps over the VERITAS field of view produced with a
 $0.2^{\circ}$ sampling radius are shown in Figure \ref{fig:skymaps} with overlaid X-ray and radio
 contours from the ROSAT all-sky survey \citep{article:BrielHenryBohringer:1992}  and GBT 1.4 GHz
@@ -283,13 +285,15 @@ observations \citep{article:BrownRudnick:2010} respectively.
 No significant excess of VHE gamma-rays from the Coma cluster was detected with VERITAS, as
 illustrated by the $\theta^{2}$ distribution shown in Figure \ref{fig:thetasq}. The $\theta^{2}$
 distribution is a radial comparison of the ON-source event distribution with the estimated
-background. It extends out to a radius of 0.42 square degrees to cover all regions of interest
-considered in this work. A 99\% confidence level upper limit is calculated for each region of
+background. It extends out to 0.42 square degrees to cover both the case of point-like and extended
+emission from the core of the Coma cluster. The $\theta^{2}$ distributions for the member galaxies
+alos considered in this work are very similar to that in Figure \ref{fig:thetasq} and show no
+excess of gamma rays. A 99\% confidence level upper limit is calculated for each region of
 interest using the method described by \citet{article:Rolke_etal:2005} assuming a Gaussian
 background. A lower bound of zero is imposed on the signal rate to handle the negative excesses
-seen for several of the regions of interest. Figure \ref{fig:sigdist} shows that the VERITAS data
-is well fit by a Gaussian with a mean close to zero and a standard deviation within a few percent
-of unity. 
+seen for several of the regions of interest. Figure \ref{fig:sigdist} shows the distribution of
+significances over the VERITAS skymap, which is well fit by a Gaussian with a mean close to zero and
+a standard deviation within a few percent of unity.
 
 Table \ref{table:results} lists the upper limits for the selected regions of interest tabulated in
 Table \ref{table:roi}. These upper-limit calculations depend on the gamma-ray spectrum, which in
@@ -302,7 +306,7 @@ $\alpha=2.1, 2.3$, and $2.5$.
 \section{\Fermi-LAT Analysis and Results}
 The Large Area Telescope (LAT) on board the \Fermi Gamma-ray Space Telescope (\Fermi)
 has observed the Coma cluster in all-sky survey mode since its launch in June 2008. The
-\Fermi-LAT is sensitive to gamma rays in the 20 MeV to $\sim$300 GeV energy range and is thus
+\Fermi-LAT is sensitive to gamma rays in the 20 MeV to $\sim$300 GeV energy range and is
 very complimentary to the VERITAS observations. \citet{article:Ackermann_etal:2010} reported on the
 search for gamma-ray emission from thirty-three galaxy clusters in the data from the first 18
 months, including the Coma cluster, for which an upper limit of $4.58\times 10^{-9}$ ph. cm$^{-2}$
@@ -313,12 +317,11 @@ the period 2010 February 5 to 2011 June 10 is presented as a compliment to the V
 The analysis of this work follows the same procedure as described in detail in
 \citet{article:Abdo_etal:2009}. To eliminate albedo gamma rays from the Earth limb, a zenith angle
 cut of 105$^{\circ}$ is applied. The \Fermi Science Tools version v9r23p1 and Instrumental
-Response Functions (IRFs) P6\_V11\_Diffuse (a model of the spatial distribution of photon events
-calibrated in flight) were used throughout this work. Only photons above 1 GeV are considered, where
-the constraints on the flux are most meaningful. The \Fermi-LAT collaboration estimates the
-systematic uncertainties at 10 GeV to be around
+Response Functions (IRFs) P6\_V11\_Diffuse were used throughout this work. Only photons above 1 GeV
+are considered, where the constraints on the flux are most meaningful. The \Fermi-LAT collaboration
+estimates the systematic uncertainties at 10 GeV to be around
 20\%.\footnote{\url{http://fermi.gsfc.nasa.gov/ssc/data/analysis/LAT\_caveats.html}} Flux upper
-limits at the 99\% confidence level in the energy range 1--30 GeV, assuming both a unresolved,
+limits at the 99\% confidence level in the energy range 1--30 GeV, assuming both an unresolved,
 point-like or spatially extended emission, are tabulated in Table \ref{table:fermi}. The gamma-ray
 emission is assumed to follow a power-law distribution with a photon index $\alpha=2.1$, 2.3, and
 $2.5$.
@@ -335,15 +338,15 @@ from cosmological hydrodynamical simulations of the formation of galaxy clusters
 approach that uses the observed luminosity of the giant radio halo in Coma to place a lower limit on
 the expected $\gamma$-ray flux in the hadronic model -- where the radio-emitting electrons are
 secondaries from CR interactions and which is independent of the magnetic field distribution.  This
-last approach translates into a minimum CR pressure which, if challenged by tight gamma-ray limits/detections,
-enables scrutinizing the hadronic interaction model of the formation of giant radio
-halos. Alternatively, realizing a spatial CR distribution that is consistent with the flux
+last approach translates into a minimum CR pressure which, if challenged by tight gamma-ray
+limits/detections, enables scrutinizing the hadronic interaction model of the formation of giant
+radio halos. Alternatively, realizing a spatial CR distribution that is consistent with the flux
 upper limits and requiring the model to match the observed radio data, enables us to derive a
 lower limit on the magnetic field distribution. We stress again that this approach assumes the
 validity of the hadronic interaction model. Modelling the CR distribution through different
-techniques enable us to bracket our lack of understanding about the underlying plasma physics that shape the CR
-distribution and hence reflect the Bayesian priors that are imposed on the modelling \citep[see][for
-a discussion]{article:PinzkePfrommerBergstrom}.
+techniques enable us to bracket our lack of understanding about the underlying plasma physics that
+shape the CR distribution and hence reflect the Bayesian priors that are imposed on the modelling
+\citep[see][for a discussion]{article:PinzkePfrommerBergstrom}.
 
 %
 %
@@ -739,23 +742,29 @@ events, and the signal-to-noise deteriorates.
 %
 
 \section{Discussion and Conclusions}
-VERITAS observed the Coma cluster of galaxies for a total of 18.6 hours of high-quality live time
-between March and May in 2008. No significant excess of gamma-rays above a threshold of about 220
-GeV was detected. Flux upper limits at 99\% confidence level were calculated for the cluster core
-and three member galaxies. The core was considered both as a point-like and spatially extended
-source. The obtained flux upper limits were used to constrain properties of the cluster.
+We have reported on the observations of the Coma cluster of galaxies in VHE gamma rays with VERITAS
+and complementary observations with the \emph{Fermi}-LAT. VERITAS observed the Coma cluster of
+galaxies for a total of 18.6 hours of high-quality live time between March and May in 2008. No
+significant excess of gamma-rays above an energy threshold of about 220 GeV was detected. The
+\emph{Fermi}-LAT has observed the Coma cluster in all-sky survey mode since its launch in June
+2008. We have used all data available from launch to June 2011 for an updated analysis over already
+published results \citep{article:Ackermann_etal:2010}. Again, no significant excess of gamma rays
+was detected. We have used the VERITAS and \emph{Fermi}-LAT data to calculate flux upper limits at
+the 99\% confidence level for the cluster core, considered as both a point-like and spatially
+extended source, and three member galaxies. The flux upper limits obtained was then used to
+constrain properties of the cluster.
 
-We employed various approaches to constrain the CR population and magnetic field distribution that
-are complementary in their assumptions and hence well suited in assessing underlying Bayesian
-priors in the models. (1) We use a simplified ``isobaric CR model'' that is characterized by a
-constant CR-to-thermal pressure fraction and has a power-law momentum spectrum.  While this model
+We have employed various approaches to constrain the CR population and magnetic field distribution
+that are complementary in their assumptions and hence well suited in assessing underlying Bayesian
+priors in the models. (1) We used a simplified ``isobaric CR model'' that is characterized by a
+constant CR-to-thermal pressure fraction and has a power-law momentum spectrum. While this model
 is physically not justified a priory, it is simple and widely used in the literature and captures
 some aspects of more elaborate models such as (2) the simulation-based analytical approach of
 \citet{article:PinzkePfrommer:2010}. This is a ``first principle approach'' that predicts the CR
 distribution spectrally and spatially for a given set of assumptions (namely the physics that was
 simulated). It is powerful since it only requires the density profile as input due to the
 approximate universality of the CR distribution (when neglecting CR diffusion and streaming which
-appears necessary to explain the radio halo bimodality). (3) We finally use a pragmatic
+appears necessary to explain the radio halo bimodality). (3) We finally used a pragmatic
 approach which models the CR and magnetic distribution in order to reproduce the observed emission
 profile of the Coma radio halo. While this approach is also physically not justified, it is
 powerful as it shows what the ``correct'' model has to achieve and can point into the direction of
@@ -793,6 +802,14 @@ most a small fraction of the overall pressure, $<0.025$. As a result, hydrostati
 and the total Comptonization parameter due to the Sunyaev-Zel'dovich effect attain at most a very
 small bias due to CRs.
 
+We have also used the flux upper limits obtained with VERITAS to constrain the thermally averaged
+product of the total self-annihilation cross section and the relative velocity of the dark matter
+particles. Assuming the dark matter is a WIMP and follows the density profile by 
+\citet{article:NavarroFrenkWhite:1997} we calculated the limits on $\expval{\sigma v}$ to be on the
+order of $10^{-20}$ to $10^{-21}$ cm$^{-3}$ s$^{-1}$ depending on the chosen aperture. These limits
+are based on conservative estimates of the astrophysical factor, which does not inlcude any boosting
+from clumping or the Sommerfeld effect.
+
 \acknowledgments
 This research was supported by grants from the U.S. Department of Energy, the U.S. National Science
 Foundation, and the Smithsonian Institution, by NSERC in Canada, by Science Foundation Ireland, and
@@ -826,8 +843,7 @@ considered for the extended source analyses presented here.}
 \scalebox{1.0}{\plotone{f2.eps}}
 \end{center}
 \caption{$\theta^{2}$ distribution from VERITAS observations of the Coma cluster of galaxies. The
-points with error bars represent the ON-source data sample and the filled area is the estimated
-background due to cosmic rays. Each bin represents an annulus around the Coma cluster core
+points with error bars represent the ON-source data sample and the filled area is the background estimation in the OFF-source regions. Each bin represents an annulus around the Coma cluster core
 position. The data were derived from the ring background model using a $0.2^{\circ}$ sampling
 radius.}
 \label{fig:thetasq}
