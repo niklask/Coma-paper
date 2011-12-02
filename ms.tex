@@ -1,6 +1,7 @@
 \documentclass[12pt,manuscript]{aastex}
 %\documentclass[twocolumn]{emulateapj}
 \usepackage{xspace}
+\RequirePackage{lineno}
 
 \def\del#1{{}}
 %\def\del#1{{\bf (DELETED TEXT)}}
@@ -23,7 +24,10 @@
 \shorttitle{Coma Cluster Observations with VERITAS}
 \shortauthors{VERITAS collaboration}
 
+\linenumbers
+
 \begin{document}
+
 
 %\title{VHE Gamma-Ray Observations of the Coma Cluster of Galaxies with VERITAS}
 %\title{Constraints on Cosmic-Ray Particle Populations, Magnetic Fields, and Dark Matter from VHE Gamma-Ray Observations of the Coma Cluster of Galaxies with VERITAS}
@@ -46,30 +50,31 @@ A. Pinzke\altaffilmark{6}}
 %%\submitted{preprint}
 
 \begin{abstract}
-  Observations of radio halos and relics in galaxy clusters indicate efficient electron acceleration
-  processes; the same processes are even more efficient for protons. Since protons have a cooling
-  time which exceeds the Hubble time in clusters, they can accumulate suggesting that clusters may
-  also be sources of very high-energy (VHE; $E>100$ GeV) gamma-ray emission resulting from the
-  interactions of highly relativistic cosmic-ray (CR) hadrons with the intracluster gas. Reported
-  here are VHE gamma-ray observations of the Coma galaxy cluster with the VERITAS array of imaging
-  Cherenkov telescopes, with complementing \Fermi Gamma-ray Space Telescope observations at GeV
-  energies. No significant gamma-ray emission from the Coma cluster was detected. Flux upper limits
-  at the 99\% confidence level were measured to be on the order of $2-5\times 10^{-8}$ ph. m$^{-2}$
-  s$^{-1}$ (VERITAS, $>$220 GeV) and $\sim 3\times 10^{-6}$ ph. m$^{-2}$ s$^{-1}$ (\Fermi, 1-3
-  GeV), respectively. For VERITAS (\Fermi), the limits are a factor of 60 (20) higher than
-  model-predicted minimum gamma-ray fluxes, which assume the radio-emitting electrons of the Coma
-  radio halo to be all secondaries from cosmic-ray interactions. We use the gamma-ray flux upper
-  limits to constrain the populations of CRs and magnetic fields in Coma. Using an analytical
-  approach informed by cosmological cluster simulations, the CR-to-thermal pressure is constrained
-  to be $< 15\%$ from VERITAS data and $< 2.5\%$ from \Fermi data (averaged within the virial
-  radius). Assuming that the radio-emitting electrons of the Coma halo result from hadronic CR
-  interactions, the observations imply a lower limit on the central magnetic field in Coma of
-  $1$--$3\mu$G, depending on how the magnetic field declines with radius and on the gamma-ray
-  spectral index. Since these values are well below those inferred by Faraday rotation measurements
-  in Coma, this makes the hadronic model a very plausible explanation of the Coma radio
-  halo. Finally, a constraint on the thermally averaged product of the total self-annihilation cross
-  section and the relative velocity of the dark-matter particles, $\expval{\sigma v}$, is derived
-  and found to be $\lesssim 10^{-21}$ cm$^{3}$ s$^{-1}$ for $m_{\chi}\gtrsim 1000$ GeV/c$^{2}$.
+\linenumbers
+Observations of radio halos and relics in galaxy clusters indicate efficient electron acceleration
+processes; the same processes are even more efficient for protons. Since protons have a cooling
+time which exceeds the Hubble time in clusters, they can accumulate suggesting that clusters may
+also be sources of very high-energy (VHE; $E>100$ GeV) gamma-ray emission resulting from the
+interactions of highly relativistic cosmic-ray (CR) hadrons with the intracluster gas. Reported
+here are VHE gamma-ray observations of the Coma galaxy cluster with the VERITAS array of imaging
+Cherenkov telescopes, with complementing \Fermi Gamma-ray Space Telescope observations at GeV
+energies. No significant gamma-ray emission from the Coma cluster was detected. Flux upper limits
+at the 99\% confidence level were measured to be on the order of $2-5\times 10^{-8}$ ph. m$^{-2}$
+s$^{-1}$ (VERITAS, $>$220 GeV) and $\sim 3\times 10^{-6}$ ph. m$^{-2}$ s$^{-1}$ (\Fermi, 1-3
+GeV), respectively. For VERITAS (\Fermi), the limits are a factor of 60 (20) higher than
+model-predicted minimum gamma-ray fluxes, which assume the radio-emitting electrons of the Coma
+radio halo to be all secondaries from cosmic-ray interactions. We use the gamma-ray flux upper
+limits to constrain the populations of CRs and magnetic fields in Coma. Using an analytical
+approach informed by cosmological cluster simulations, the CR-to-thermal pressure is constrained
+to be $< 15\%$ from VERITAS data and $< 2.5\%$ from \Fermi data (averaged within the virial
+radius). Assuming that the radio-emitting electrons of the Coma halo result from hadronic CR
+interactions, the observations imply a lower limit on the central magnetic field in Coma of
+$1$--$3\mu$G, depending on how the magnetic field declines with radius and on the gamma-ray
+spectral index. Since these values are well below those inferred by Faraday rotation measurements
+in Coma, this makes the hadronic model a very plausible explanation of the Coma radio
+halo. Finally, a constraint on the thermally averaged product of the total self-annihilation cross
+section and the relative velocity of the dark-matter particles, $\expval{\sigma v}$, is derived
+and found to be $\lesssim 10^{-21}$ cm$^{3}$ s$^{-1}$ for $m_{\chi}\gtrsim 1000$ GeV/c$^{2}$.
 \end{abstract}
 
 
@@ -227,7 +232,7 @@ fully operational. The total exposure amounts to 18.6 hours of quality-selected 
 time periods of astronomical darkness, clear sky conditions and without technical problems with the
 array. The center of the cluster was tracked in \emph{wobble} mode, where the expected source
 location is offset from the center of the field of view, to allow for simultaneous background
-estimation \citep{article:Formin_etal:1994}. All of the observations were made in a small range of
+estimation \citep{article:Fomin_etal:1994}. All of the observations were made in a small range of
 zenith angles averaging $\sim 21^{\circ}$.
 
 The data analysis was performed following the standard VERITAS procedures described in
@@ -240,13 +245,13 @@ than $1.43^{\circ}$. These quality selection criteria impose an energy threshold
 threshold is defined as the energy corresponding to the maximum of the product function of the
 observed spectrum with the collection area. It does not vary significantly for the different source
 scenarios and assumed spectral indices reported in this work.} of about 220 GeV. In addition,
-events for which only images from the two closest-spaced telescopes\footnote{In the arra
+events for which only images from the two closest-spaced telescopes\footnote{In the array
 configuration prior to summer 2009, two telescopes  had a separation of only 35 m.} survive quality
-selection are rejected, as they introduce an irreducible high background rate, due to local muons, 
+selection are rejected, as they introduce an irreducible high background rate due to local muons, 
 degrading the instrument sensitivity \citep{article:MaierKnapp:2007}.
 
 Gamma-ray like events are separated from the CR background by imposing cuts on scaled parameters
-\citep{article:Aharonian_etal:1997, article:Krawczynski_etal:2006} calculated from a parametrized
+\citep{article:Aharonian_etal:1997, article:Krawczynski_etal:2006} calculated from a parameterized
 moment analysis of the shower images \citep{inproc:Hillas:1985}. The gamma-hadron separation cuts
 used in this analysis were optimized a priori for a weak point source (3\% Crab Nebula flux level)
 and a photon index of 2.4 using data taken on the Crab Nebula during the same epoch. Because the VHE
@@ -287,7 +292,7 @@ illustrated by the $\theta^{2}$ distribution shown in Figure \ref{fig:thetasq}. 
 distribution is a radial comparison of the ON-source event distribution with the estimated
 background. It extends out to 0.42 square degrees to cover both the case of point-like and extended
 emission from the core of the Coma cluster. The $\theta^{2}$ distributions for the member galaxies
-alos considered in this work are very similar to that in Figure \ref{fig:thetasq} and show no
+also considered in this work are very similar to that in Figure \ref{fig:thetasq} and show no
 excess of gamma rays. A 99\% confidence level upper limit is calculated for each region of
 interest using the method described by \citet{article:Rolke_etal:2005} assuming a Gaussian
 background. A lower bound of zero is imposed on the signal rate to handle the negative excesses
@@ -343,9 +348,9 @@ limits/detections, enables scrutinizing the hadronic interaction model of the fo
 radio halos. Alternatively, realizing a spatial CR distribution that is consistent with the flux
 upper limits and requiring the model to match the observed radio data, enables us to derive a
 lower limit on the magnetic field distribution. We stress again that this approach assumes the
-validity of the hadronic interaction model. Modelling the CR distribution through different
+validity of the hadronic interaction model. Modeling the CR distribution through different
 techniques enable us to bracket our lack of understanding about the underlying plasma physics that
-shape the CR distribution and hence reflect the Bayesian priors that are imposed on the modelling
+shape the CR distribution and hence reflect the Bayesian priors that are imposed on the modeling
 \citep[see][for a discussion]{article:PinzkePfrommerBergstrom}.
 
 %
@@ -460,7 +465,7 @@ $R_\rmn{vir}=2.2$~Mpc. To compute the CR pressure, we assume a low-momentum cuto
 distribution at $q = 0.8\,m_p c$ to reflect the high cooling rates at low CR energies. The relative
 CR pressure rises toward the outer regions on account of the higher efficiency of CR acceleration at
 the peripheral accretion shocks compared to the weak central flow shocks. Adiabatic compression of a
-mixture of CRs and thermal gas disfavours the CR pressure relative to the thermal pressure on
+mixture of CRs and thermal gas disfavors the CR pressure relative to the thermal pressure on
 account of the softer equation of state of CRs. The weak increase of $X_{\CR}$ toward the core is
 due to the comparably fast thermal cooling of gas.
 
@@ -557,7 +562,7 @@ Faraday RM analysis of the magnetic field strength by, e.g., background sources 
 clusters are degenerate with the magnetic coherence scale and may be biased by the unknown
 correlation between magnetic and density fluctuations.} the hadronic model of radio halos would
 be challenged. The method we use to constrain the magnetic field inherits a dependence on
-the assumed radial scaling which we parametrize as
+the assumed radial scaling which we parameterize as
 \begin{equation}
 \label{eq:B}
 B(r) = B_{0} \,\left(\frac{n_{\rmn{e}}(r)}{n_{\rmn{e}}(0)}\right)^{\alpha_B},
@@ -660,7 +665,7 @@ limits since they are derived from flux upper limits. For the \Fermi upper limit
 from 0.1 to 0.4; hence the $X_{\CR}$-profiles always obey the energy condition, i.e., $P_{\CR} <
 P_{\mathrm{th}}$ over the entire range of the radio halo emission ($< 1$ Mpc).\footnote{See Figure 3
 in \citet{article:PfrommerEnsslin:2004a} for the entire parameter range assuming minimum energy
-conditions and \citet{article:PfrommerEnsslin:2004b}, Figure 7 for a parametrization as adopted in
+conditions and \citet{article:PfrommerEnsslin:2004b}, Figure 7 for a parameterization as adopted in
 this study. We caution, however, that the minimum-energy condition is violated at the outer radio
 halo boundary for the range of minimum magnetic-field values inferred by this study.} The
 corresponding values for $X_\CR$ in the cluster center are smaller than 0.01 for the entire
@@ -717,7 +722,7 @@ Hubble radius, $R_{H}$. In this work we have adopted the DM density profile by
 \begin{equation}
 \rho_{\chi}(r)=\rho_{s}\left(\frac{r}{r_{s}}\right)^{-1}\left(1+\frac{r}{r_{s}}\right)^{-2},
 \end{equation}
-which parametrizes the distribution of DM by the scale radius $r_{s}$ and the scale density
+which parameterizes the distribution of DM by the scale radius $r_{s}$ and the scale density
 $\rho_{s}$. Using weak-lensing measurements of the virial mass in the Coma cluster
 \citep{article:Gavazzi_etal:2009} we find for these parameters $r_{s}=0.654$ Mpc and
 $\rho_{s}=4.4\times 10^{4}$ M$_{\odot}$/Mpc$^{3}$. Table \ref{table:astrofactor} lists the
@@ -751,14 +756,14 @@ significant excess of gamma-rays above an energy threshold of about 220 GeV was 
 published results \citep{article:Ackermann_etal:2010}. Again, no significant excess of gamma rays
 was detected. We have used the VERITAS and \emph{Fermi}-LAT data to calculate flux upper limits at
 the 99\% confidence level for the cluster core, considered as both a point-like and spatially
-extended source, and three member galaxies. The flux upper limits obtained was then used to
+extended source, and three member galaxies. The flux upper limits obtained were then used to
 constrain properties of the cluster.
 
 We have employed various approaches to constrain the CR population and magnetic field distribution
 that are complementary in their assumptions and hence well suited in assessing underlying Bayesian
 priors in the models. (1) We used a simplified ``isobaric CR model'' that is characterized by a
 constant CR-to-thermal pressure fraction and has a power-law momentum spectrum. While this model
-is physically not justified a priory, it is simple and widely used in the literature and captures
+is physically not justified a priori, it is simple and widely used in the literature and captures
 some aspects of more elaborate models such as (2) the simulation-based analytical approach of
 \citet{article:PinzkePfrommer:2010}. This is a ``first principle approach'' that predicts the CR
 distribution spectrally and spatially for a given set of assumptions (namely the physics that was
@@ -929,9 +934,9 @@ galaxies and surroundings}
 \tablehead{
 \colhead{Source} & 
 \colhead{RoI\tablenotemark{a} [deg]} & 
-\colhead{$N_{S}$} & 
-\colhead{S\tablenotemark{b} [$\sigma$]} &
-\multicolumn{6}{c}{Flux U.L.\tablenotemark{c}} \\
+\colhead{$N_{S}$\tablenotemark{b}} & 
+\colhead{S\tablenotemark{c} [$\sigma$]} &
+\multicolumn{6}{c}{Flux U.L.\tablenotemark{d}} \\
 \colhead{} & 
 \colhead{} & 
 \colhead{} & 
@@ -950,8 +955,9 @@ NGC 4921 & 0 & -4 & -0.23 & - & - &  2.41 & (0.72\%)  & - & -
 \enddata
 \tablenotetext{a}{Intrinsic source radius (zero means point source), which is convolved with the
 analysis PSF.}
-\tablenotetext{b}{Statistical significance calculated according to \citet{article:LiMa:1983}.}
-\tablenotetext{c}{99\% confidence level upper limit in units of $10^{-8}$ ph. m$^{-2}$ s$^{-1}$
+\tablenotetext{b}{Event counts in the source region.}
+\tablenotetext{c}{Statistical significance calculated according to \citet{article:LiMa:1983}.}
+\tablenotetext{d}{99\% confidence level upper limit in units of $10^{-8}$ ph. m$^{-2}$ s$^{-1}$
 calculated according to \citet{article:Rolke_etal:2005} above an energy threshold of 220 GeV, with
 corresponding fluxes in percent of the steady Crab Nebula flux in parenthesis.}
 \label{table:results}
