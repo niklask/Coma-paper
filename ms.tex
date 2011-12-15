@@ -120,7 +120,7 @@ model-predicted minimum gamma-ray fluxes, which assume the radio-emitting electr
 radio halo to be all secondaries from cosmic-ray interactions. We use the gamma-ray flux upper
 limits to constrain the populations of CRs and magnetic fields in Coma. Using an analytical
 approach informed by cosmological cluster simulations, the CR-to-thermal pressure is constrained
-to be $< 15\%$ from VERITAS data and $< 2.5\%$ from \Fermi data (averaged within the virial
+to be \C{$< 16\%$} from VERITAS data and $< 2.5\%$ from \Fermi data (averaged within the virial
 radius). Assuming that the radio-emitting electrons of the Coma halo result from hadronic CR
 interactions, the observations imply a lower limit on the central magnetic field in Coma of
 $1$--$3\mu$G, depending on how the magnetic field declines with radius and on the gamma-ray
@@ -437,12 +437,12 @@ $X_{\CR} = \expval{P_{\CR}}/\expval{P_\rmn{th}}$, averaged within the virial rad
 $R_\rmn{vir}=2.2$~Mpc, that we define as the radius of a sphere enclosing a mean density that is 200
 times the critical density of the Universe. Constraints on $X_\CR$ with VERITAS flux upper limits
 \C{(99\%\ CL)} strongly depend on $\alpha$. This is due to the comparably large \C{energy range from
-  GeV energies (that dominate the CR pressure, provided $\alpha>2$ and a non-relativistic
-  low-momentum cutoff, i.e., $q<m_p c$) to energies at 220 GeV, where our quality selection criteria
-  imposed the energy threshold. These gamma-ray energies correspond to 1.6 TeV CRs -- an energy
-  ratio of more than 3 orders of magnitudes which explains the sensitivity to small changes in
-  $\alpha$.} The flux measurements within 0.2$^{\circ}$ are the most constraining due to a
-competition between integrated signal and background for an increasing size of the radius of
+  GeV energies (that dominate the CR pressure, provided $\alpha>2$ and the CR population has a
+  non-relativistic low-momentum cutoff, i.e., $q<m_p c$) to energies at 220 GeV, where our quality
+  selection criteria imposed the energy threshold. These gamma-ray energies correspond to 1.6 TeV
+  CRs -- an energy ratio of more than 3 orders of magnitudes which explains the sensitivity to small
+  changes in $\alpha$.} The flux measurements within 0.2$^{\circ}$ are the most constraining due to
+a competition between integrated signal and background for an increasing size of the radius of
 integration. This yields limits on $X_\CR$ between 0.048 and 0.43 (for $\alpha$ varying between 2.1
 and 2.5), with a constraint of $X_\CR<0.1$ for $\alpha=2.3$ (close to the spectral index predicted
 by the simulations of \citet{article:PinzkePfrommer:2010} around 220 GeV).  Constraints on $X_\CR$
@@ -542,8 +542,8 @@ In the case of VERITAS, for the most constraining regions tested (within an aper
 VERITAS (see Table \ref{table:results} and assuming a spectral index of $\alpha=2.3$ which matches
 the simulated one at energies $E_\gamma=200$ GeV). To first order, we can scale the averaged
 relative CR pressure of our model by that factor, keep the spatial behavior and obtain an integrated
-limit of the relative CR pressure of $X_{\CR}<0.105$ within 0.2$^{\circ}$ that translates to a limit
-within the cluster virial radius of $X_\CR<0.152$ (solid lines of Figure \ref{fig:xcr}).  This limit
+limit of the relative CR pressure of \C{$X_{\CR}<0.112$} within 0.2$^{\circ}$ that translates to a limit
+within the cluster virial radius of \C{$X_\CR<0.162$} (solid lines of Figure \ref{fig:xcr}).  This limit
 is less constraining by 50\% in comparison to the simplified analytical model, which gives
 $X_\CR<0.1$. This difference is explained by the concavity of the simulated spectrum which therefore
 carries more pressure at GeV energies than a pure power-law spectrum of $\alpha=2.3$.
@@ -861,8 +861,8 @@ Applying our simplified ``isobaric CR model'' to the most constraining VERITAS l
 constrain the CR-to-thermal pressure, $X_\CR$, to be below 0.048 and 0.43 (for a CR or gamma-ray
 spectral index, $\alpha$, varying between 2.1 and 2.5). We obtain a constraint of $X_\CR<0.1$ for
 $\alpha=2.3$, the spectral index predicted by simulations at energies around 220 GeV.  This limit is
-more constraining by a factor of 1.5 in comparison to the simulation-based model which gives
-$X_\CR<0.15$. This difference is due to the concave form of the simulated spectrum which provides
+more constraining by a factor of \C{1.6} in comparison to the simulation-based model which gives
+$X_\CR<0.16$. This difference is due to the concave form of the simulated spectrum which provides
 more pressure at GeV energies in comparison to a pure power-law spectrum of $\alpha=2.3$.
 
 The \Fermi flux limits constrain $X_\CR$ to be below 0.017--0.025 (for $\alpha$ varying
@@ -938,13 +938,16 @@ standard deviation.}
 \scalebox{1.0}{\plotone{f4.eps}}
 \end{center}
 \caption{Integral flux upper limits for Coma (this work, Tables~\ref{table:results} and
-  \ref{table:fermi}) for different integration radii (shown with different grey scales), assuming
-  $\alpha=2.1$. These are compared to integrated spectra of the same energy interval and aperture,
-  assuming the universal gamma-ray spectrum of clusters \citep{article:PinzkePfrommer:2010}. To
-  guide the eye, we show the underlying universal integral energy distribution of pion decay
-  gamma-rays, $E_\gamma F_\gamma(>E_\gamma)$, resulting from hadronic interactions of CRs and ICM
-  protons (dotted). Note that the \Fermi limit for the energy interval of 1--3 GeV within the
-  aperture of 0.4$^\circ$ is most constraining.}
+  \ref{table:fermi}) for different integration radii (\C{error bars} with different grey scales),
+  \C{assuming that $\alpha=2.3$ except in the 1--3 GeV energy interval where $\alpha=2.1$ is
+    adopted.}  These are compared to integrated spectra of the same energy interval and aperture,
+  assuming the universal gamma-ray spectrum of clusters \citep[\C{lines with different grey
+    scales,}][]{article:PinzkePfrommer:2010}. To guide the eye, we show the underlying universal
+  integral energy distribution of pion decay gamma-rays, $E_\gamma F_\gamma(>E_\gamma)$, resulting
+  from hadronic interactions of CRs and ICM protons (dotted). \C{For visualization purposes all
+    photon fluxes are weighted with the smallest energy in each interval.} Note that the \Fermi
+  limit for the energy interval of 1--3 GeV within the aperture of 0.4$^\circ$ is most
+  constraining.}
 \label{fig:spectrum}
 \end{figure*}
 
@@ -1098,7 +1101,7 @@ Disk, $r=0.4^{\circ}$ & 0.80 & 0.36 & 2.4 & 2.50 & 0.833 & 0.849 \\
 \begin{deluxetable}{cccccc}
 \tablecolumns{6}
 \tablewidth{0pc}
-\tablecaption{Constraints on the relative CR pressure in the Coma cluster core (simplified analytic
+\tablecaption{Constraints on the relative CR pressure in the Coma cluster core (simplified, \C{isobaric} analytic
   model) for different spatial extensions and predicted fluxes for the energy bands 1-3 GeV and
   $>220$~GeV (simulation-based model).}
 \rotate
@@ -1106,35 +1109,35 @@ Disk, $r=0.4^{\circ}$ & 0.80 & 0.36 & 2.4 & 2.50 & 0.833 & 0.849 \\
 \tablehead{
 \colhead{RoI\tablenotemark{a} [deg]} 
     & \multicolumn{3}{c}{analytic model: $X_{\CR,\,\rmn{max}}~[\%]$\tablenotemark{b} }
-    & \colhead{$F_{\gamma,\rmn{sim}}(E)$\tablenotemark{c}} & \colhead{$F_{\gamma,\rmn{sim}}(>E)$\tablenotemark{d}}   \\
+    & \colhead{$F_{\gamma,\rmn{sim}}(>E)$\tablenotemark{c}}  
+    & \colhead{$F_{\rmn{UL}}/F_{\gamma,\rmn{sim}}(>E)$\tablenotemark{d}} \\
 & \colhead{$\alpha=2.1$} & \colhead{$\alpha=2.3$} & \colhead{$\alpha=2.5$} & & 
 }
 \startdata
 \multicolumn{6}{c}{VERITAS constraints:}\\
 \hline
-0.13 & 10  & 23 & 97 & 0.52  & 1.9  \\
-0.2  & 4.8 & 10 & 43 & 0.80  & 2.9  \\
-0.4  & 6.7 & 15 & 62 & 1.21  & 4.4  \\
+0.13 & 10  & 23 & 97 & 1.9 & 14.8\\
+0.2  & 4.8 & 10 & 43 & 2.9 & 7.2\\
+0.4  & 6.7 & 15 & 62 & 4.4 & 10.8\\
 \cutinhead{\Fermi constraints:}
-0.13 & 5.2 & 3.5 & 4.7 & 2.2  & 1.4  \\
-0.2  & 3.5 & 2.4 & 3.1 & 3.4  & 2.1  \\
-0.4  & 2.5 & 1.7 & 2.3 & 5.2  & 3.2  \\
+0.13 & 5.2 & 3.5 & 4.7 & 1.4 & 1.96\\
+0.2  & 3.5 & 2.4 & 3.1 & 2.1 & 1.46\\
+0.4  & 2.5 & 1.7 & 2.3 & 3.2 & 1.10\\
 \enddata
 \tablenotetext{a}{Intrinsic source radius; we approximate the aperture of the point source-limits by the
 analysis PSF of 0.13$^\circ$.}
 \tablenotetext{b}{Constraint on the relative CR pressure,
 $X_{\CR} = \expval{P_\CR}/ \expval{P_\rmn{th}}$, which was assumed to be constant through the
 cluster and calculated according to \citet{article:PfrommerEnsslin:2004b}.}
-\tablenotetext{c}{Differential gamma-ray flux $E^{2}dF/dE$ from the simulation-based analytic model
-by \citet{article:PinzkePfrommer:2010}: at $E=220$ GeV in units of $10^{-6}$ GeV m$^{-2}$ s$^{-1}$
-for VERITAS and between $E=1-3$ GeV in units of $10^{-9}$ GeV m$^{-2}$ s$^{-1}$ for \Fermi. }
-\tablenotetext{d}{Integrated gamma-ray flux from the simulation-based analytic model by
+\tablenotetext{c}{Integrated gamma-ray flux from the simulation-based analytic model by
 \citet{article:PinzkePfrommer:2010}: above $E=220~\rmn{GeV}$ in units of $10^{-9}$ ph. m$^{-2}$
-s$^{-1}$ for VERITAS and  above $E=1~\rmn{GeV}$ in units of $10^{-6}$ ph. m$^{-2}$ s$^{-1}$ for
+s$^{-1}$ for VERITAS and between $E=1-3~\rmn{GeV}$ in units of $10^{-6}$ ph. m$^{-2}$ s$^{-1}$ for
 Fermi.} 
+\tablenotetext{d}{\C{Ratio of flux upper limits ($F_{\rmn{UL}}$) to the integrated gamma-ray flux
+ from the simulation-based analytic model: in VERITAS band above $E=220~\rmn{GeV}$ an $\alpha=2.3$ is 
+ assumed for the U.L., and in \Fermi band between $E=1-3$ GeV an $\alpha=2.1$ is assumed for the U.L..}}
 \label{table:constraints_simple}
 \end{deluxetable}
-
 
 
 \begin{deluxetable}{ccccccc}
