@@ -309,7 +309,7 @@ Gamma-ray like events are separated from the CR background by imposing cuts on s
 moment analysis of the shower images \citep{inproc:Hillas:1985}. The gamma-hadron separation cuts
 used in this analysis were optimized {\em a priori} for a weak point source (3\% Crab Nebula flux
 level) and a photon index of 2.4 using data taken on the Crab Nebula during the same epoch. Because
-the VHE gamma-ray spectrum for the Coma cluster is expected to be hard, with a photon index of
+the VHE gamma-ray spectrum for the Coma cluster is expected to be a power-law with a photon index of
 about 2.3 \citep{article:PinzkePfrommer:2010}, these cuts are suitable for the analysis of the Coma
 cluster data set. It is noted that slightly varying the spectral index ($\pm$ 0.2) does not
 significantly impact the cuts used for quality selection cuts and gamma-hadron separation in this
@@ -319,7 +319,7 @@ The Coma cluster is a very rich cluster of galaxies with many plausible sites fo
 emission: the core region, the peripheral radio relic, as well as individual powerful cluster
 member galaxies. VERITAS has a large enough field of view to allow investigation of several of
 these scenarios. In this work the focus has been on the core region and three cluster members. The
-latter are treated as point sources in the analysis, whereas the core is treated as either a point
+core region is treated as either a point
 source or a mildly extended source with intrinsic source radius $0.2^{\circ}$ or $0.4^{\circ}$,
 similar to the extension of the thermal soft X-ray emission from the core. There
 is evidence of a recent merger event between the two central galaxies NGC 4889 and NGC 4874
@@ -355,7 +355,7 @@ seen for several of the regions of interest. Figure \ref{fig:sigdist} shows the 
 significances over the VERITAS skymap, which is well fit by a Gaussian with a mean close to zero and
 a standard deviation within a few percent of unity.
 
-Table \ref{table:results} lists the upper limits for the selected regions of interest tabulated in
+Table \ref{table:results} lists the upper limits for the selected regions of interest shown in
 Table \ref{table:roi}. These upper-limit calculations depend on the gamma-ray spectrum, which in
 this work is assumed to be a power law in energy, $F\propto E^{-\alpha}$, with a spectral index
 $\alpha=2.1, 2.3$, and $2.5$.
@@ -382,7 +382,7 @@ are considered, where the constraints on the flux are most meaningful. The \Ferm
 estimates the systematic uncertainties at 10 GeV to be around
 20\%.\footnote{\url{http://fermi.gsfc.nasa.gov/ssc/data/analysis/LAT\_caveats.html}} Flux upper
 limits at the 99\% confidence level in the energy range 1--30 GeV, assuming both an unresolved,
-point-like or spatially extended emission, are tabulated in Table \ref{table:fermi}. The gamma-ray
+point-like or spatially extended emission, are shown in Table \ref{table:fermi}. The gamma-ray
 emission is assumed to follow a power-law distribution with a photon index $\alpha=2.1$, 2.3, and
 $2.5$.
 
@@ -748,63 +748,63 @@ emission.
 \section{Emission from Dark Matter Annihilations}
 As already mentioned in the introduction, most of the mass in a galaxy cluster is in the form of
 DM. While the nature of DM remains unknown, the most compelling theoretical candidate is a
-WIMP. The self-annihilations of WIMPs are expected to produce secondary gamma rays with a
-spectral signature that deviates significantly from the power-law spectra observed from most
-conventional astrophysical sources. The spectrum will also feature a sharp cutoff at the WIMP
-mass. These spectral features together with the expected difference in the
-intensity distribution compared to conventional astrophysical sources allow an
-indirect detection of DM.
+WIMP. The self-annihilation of WIMPs can either produce monoenergetic gamma ray lines or a
+continuum of secondary gamma rays that deviates significantly from the power-law spectra observed
+from most conventional astrophysical sources, with a sharp cut-off at the WIMP mass. These spectral
+features together with the expected difference in the intensity distribution compared to
+conventional astrophysical sources allow a clear, indirect detection of DM.
 
 The expected gamma-ray flux due to self-annihilations of WIMPs is given by
 \begin{equation}
 \frac{d\Phi_{\gamma}(\Delta\Omega,E)}{dE}=
-\frac{\expval{\sigma v}}{8\pi m_{\chi}^{2}}\,N_\gamma (E)\, J(\Delta\Omega),
+\frac{\expval{\sigma v}}{8\pi m_{\chi}^{2}}\,\frac{N_{\gamma}}{dE}\, J(\Delta\Omega),
 \label{eqn:WIMPflux}
 \end{equation}
 where $\expval{\sigma v}$ is the thermally-averaged product of the total self-annihilation cross
-section and the WIMP velocity, $m_{\chi}$ is the WIMP mass, $N_\gamma (E)$ is the differential
-gamma-ray yield per annihilation\footnote{In this work, we have calculated the differential
-gamma-ray yield per annihilation using the Pythia Monte-Carlo simulator.}, $\Delta\Omega$ is the
-observed solid angle, and $J$ is the astrophysical factor - a dimensionless factor which determines
-the DM annihilation rate and depends on the DM distribution.
+section and the relative WIMP velocity, $m_{\chi}$ is the WIMP mass, $\frac{N_{\gamma}}{dE}$ is the
+differential gamma-ray yield per annihilation\footnote{In this work, we have calculated the
+differential gamma-ray yield per annihilation using the Pythia Monte-Carlo simulator.},
+$\Delta\Omega$ is the observed solid angle, and $J$ is the astrophysical factor - a dimensionless
+factor which determines the DM annihilation rate and depends on the DM distribution.
 
 Given the upper limit on the observed gamma-ray rate,
 $R_{\gamma}(99\%\ \mathrm{CL}) = N_{\gamma}(99\%\ \mathrm{CL}) / T_{\mathrm{obs}}$, we can place
-constraints on the WIMP parameter space $(m_{\chi}, \expval{\sigma v})$. From Eq.
-(\ref{eqn:WIMPflux}) we find
+constraints on the WIMP parameter space $(m_{\chi}, \expval{\sigma v})$. Integrating Eq.
+(\ref{eqn:WIMPflux}) over energy we find
 \begin{equation}
 \expval{\sigma v}(99\%\ \mathrm{CL}) <
 R_{\gamma}(99\%\ \mathrm{CL})\, \frac{8\pi m_{\chi}^{2}}{J(\Delta\Omega)}\,
-\frac{1}{\int^{m_{\chi}} dE\ A_{\mathrm{eff}}\,N_\gamma (E)},
+\frac{1}{\int^{m_{\chi}}_{0} dE\ A_{\mathrm{eff}}\,N_\gamma (E)},
 \end{equation}
 where $A_{\mathrm{eff}}$ is the effective area of the gamma-ray detector.
 Because the self-annihilation of a WIMP is a two-body process, the astrophysical factor
-$J(\Delta\Omega)$ can be expressed as the line-of-sight integral of the DM density squared
+$J(\Delta\Omega)$ is the line-of-sight integral of the DM density squared
 \begin{equation}
-J(\Delta\Omega)=\left(\frac{1}{\rho_{c}^{2}R_{H}}\right)
-\int_{\Delta\Omega}d\Omega\int d\lambda\ \rho^{2}(\lambda,\Omega),
+J(\Delta\Omega)=\int_{\Delta\Omega}d\Omega\int d\lambda\ \rho_{\chi}(\lambda)^{2}(\lambda,\Omega),
 \end{equation}
-where $\lambda$ represents the line-of-sight. Here,
-$J(\Delta\Omega)$ has been normalized to the square of the critical density, $\rho_{c}$, and the
-Hubble radius, $R_{H}$. In this work we have adopted the DM density profile by
+where $\lambda$ represents the line-of-sight. In this work, we have modeled the Coma DM
+distribution with a Navarro, Frenk and White (NFW) profile,
 \citet{article:NavarroFrenkWhite:1997},
 \begin{equation}
 \rho_{\chi}(r)=\rho_{s}\left(\frac{r}{r_{s}}\right)^{-1}\left(1+\frac{r}{r_{s}}\right)^{-2},
 \end{equation}
-which parameterizes the distribution of DM by the scale radius $r_{s}$ and the scale density
-$\rho_{s}$. Using weak-lensing measurements of the virial mass in the Coma cluster
-\citep{article:Gavazzi_etal:2009} we find for these parameters $r_{s}=0.654$ Mpc and
+where $r_{s}$ is the scale radius and $\rho_{s}$ isthe scale density. Using weak weak-lensing
+measurements of the virial mass in the Coma cluster \citep{article:Gavazzi_etal:2009} and the DM
+halo mass-concentration relation derived from N-body simulation of structure formation 
+\citep{article:Bullock_etal:2001}, we find for these parameters $r_{s}=0.654$ Mpc and
 $\rho_{s}=4.4\times 10^{4}$ M$_{\odot}$/Mpc$^{3}$. Table \ref{table:astrofactor} lists the
 astrophysical factors calculated for the different VERITAS apertures considered in this work.
 It also lists the astrophysical factor calculated for the background region, which is used
 to estimate the gamma-ray contamination due to DM in the background region.
 
 The resulting exclusion regions in the $(\expval{\sigma v}, m_{\chi})$ parameter space are shown in
-Figure \ref{fig:dm} for three different DM self-annihilation channels: W$^{+}$W$^{-}$,
-b$\bar{\mathrm{b}}$, and $\tau^{+}\tau^{-}$. Depending on the chosen aperture, the limits are on
-the order of $10^{-20}$ to $10^{-21}$ cm$^{3}$ s$^{-1}$. The numerical values for each of the channels
-are listed in Table \ref{table:DMlimits}. We note that these are based on conservative estimates of
-the astrophysical factor $J$, as we do not assume boosting by clumping or the Sommerfeld effect.
+Figure \ref{fig:dm} for three different DM self-annihilation channels, W$^{+}$W$^{-}$,
+b$\bar{\mathrm{b}}$, and $\tau^{+}\tau^{-}$, independently of any WIMP models. Depending on the
+chosen aperture, the limits are on
+the order of $10^{-20}$ to $10^{-21}$ cm$^{3}$ s$^{-1}$. The minimum for each exclusion curve and
+corresponding DM particle mass is listed in Table \ref{table:DMlimits}. We note that these are
+based on conservative estimates of the astrophysical factor $J$, as we do not assume boosting by
+clumping or the Sommerfeld effect.
 
 We also note that when the size of the integration region is increased, the limits on
 $\expval{\sigma v}$ result from a competition between the gain in the astrophysical factor
@@ -878,11 +878,10 @@ small bias due to CRs.
 
 We have also used the flux upper limits obtained with VERITAS to constrain the thermally averaged
 product of the total self-annihilation cross section and the relative velocity of the dark matter
-particles. Assuming the dark matter is a WIMP and follows the density profile by 
-\citet{article:NavarroFrenkWhite:1997} we calculated the limits on $\expval{\sigma v}$ to be on the
-order of $10^{-20}$ to $10^{-21}$ cm$^{-3}$ s$^{-1}$ depending on the chosen aperture. These limits
-are based on conservative estimates of the astrophysical factor, which does not include any boosting
-from clumping or the Sommerfeld effect.
+particles. Modeling the Coma cluster DM halo with a NFW profile we derived limits on
+$\expval{\sigma v}$ to be on the order of $10^{-20}$ to $10^{-21}$ cm$^{-3}$ s$^{-1}$ depending on
+the chosen aperture. These limits are based on conservative estimates of the astrophysical factor,
+which does not include any boosting from clumping or the Sommerfeld effect.
 
 \acknowledgments
 This research is supported by grants from the U.S. Department of Energy Office of Science, the U.S.
@@ -970,8 +969,8 @@ compare to the upper limits.}
 \scalebox{1.0}{\plotone{f6.eps}}
 \end{center}
 \caption{Limits on the DM annihilation cross section $\expval{\sigma v}$ as a function of the DM
-particle mass $m_{\chi}$ derived from the VERITAS gamma-ray flux upper limits presented in this
-work.}
+particle mass $m_{\chi}$ derived from the VERITAS gamma-ray flux upper limits ($0.2^{\circ}$
+aperture) presented in this work.}
 \label{fig:dm}
 \end{figure*}
 
@@ -1128,16 +1127,16 @@ and $>220$~GeV (simulation-based model).}
 \startdata
 \multicolumn{6}{c}{VERITAS constraints:}\\
 \hline
-0.13 & 10 & 23 & 97 & 1.9 & 14.8\\
+0 & 10 & 23 & 97 & 1.9 & 14.8\\
 0.2 & 4.8 & 10 & 43 & 2.9 & 7.2\\
 0.4 & 6.7 & 15 & 62 & 4.4 & 10.8\\
 \cutinhead{\Fermi constraints:}
-0.13 & 5.2 & 3.5 & 4.7 & 1.4 & 1.96\\
+0 & 5.2 & 3.5 & 4.7 & 1.4 & 1.96\\
 0.2 & 3.5 & 2.4 & 3.1 & 2.1 & 1.46\\
 0.4 & 2.5 & 1.7 & 2.3 & 3.2 & 1.10\\
 \enddata
-\tablenotetext{a}{Intrinsic source radius; we approximate the aperture of the point source-limits by the
-analysis PSF of 0.13$^\circ$.}
+\tablenotetext{a}{Intrinsic source radius (zero means point source), which is convolved with the
+analysis PSF.}
 \tablenotetext{b}{Constraint on the relative CR pressure,
 $X_{\CR} = \expval{P_\CR}/ \expval{P_\rmn{th}}$, which was assumed to be constant through the
 cluster and calculated according to \citet{article:PfrommerEnsslin:2004b}.}
@@ -1181,8 +1180,8 @@ CR pressures for Coma}
 0.2  & ~~6.8 & ~~9.3 &  12.5 & 0.078 & 0.072 & 0.13 \\
 0.4  &  13.5 & 18.6  &  25.0 & 0.098 & 0.090 & 0.16 \\
 \enddata
-\tablenotetext{a}{Intrinsic source radius; we approximate the aperture of the point source-limits
-by the analysis PSF of 0.13$^\circ$.}
+\tablenotetext{a}{Intrinsic source radius (zero means point source), which is convolved with the
+analysis PSF.}
 \tablenotetext{b}{Minimum gamma-ray flux of the hadronic model described in \S~\ref{sec:Fmin}. 
 Values are in units of $10^{-10}$ ph. m$^{-2}$ s$^{-1}$ (VERITAS energy range) and $10^{-8}$ ph.
 m$^{-2}$ s$^{-1}$ (\Fermi energy range).}
@@ -1243,7 +1242,8 @@ $\rmn{RoI}=0.4^\circ$, see \S~\ref{sec:B} for details.}
 0.4 & $9.4\times 10^{16}$ & $1.3\times 10^{15}$ ($\simeq0.01\expval{J}_{\rmn{signal}}$, negligible)
 \enddata
 \tablecomments{$\expval{J}_{\rmn{bkg}}$ is the astrophysical factor calculated for the background
-region (ring method) and is used to estimate the level of gamma-ray contamination from DM.}
+region (ring method) and is used to estimate the level of gamma-ray contamination from DM. $\alpha$
+is the size ratio of the ON vs OFF source regions.}
 \label{table:astrofactor}
 \end{deluxetable}
 
