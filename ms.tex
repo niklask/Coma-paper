@@ -957,12 +957,12 @@ financial support of the Klaus Tschira Foundation.
 \caption{\emph{Left}: Smoothed significance map of the Coma cluster calculated from the excess VHE
 gamma-ray events observed with VERITAS over a $4.5^{\circ}\times 4.5^{\circ}$ field of view.
 The color scale indicates significance in units of standard deviations. The excess counts were
-derived using a ring background model \citep{article:Aharonian_etal:2001}.
+derived using a ring-background model \citep{article:Aharonian_etal:2001}.
 White contours show the X-ray counts per second () in the 0.1 to 2.4 keV energy band from the ROSAT
 all-sky survey \citep{article:BrielHenryBohringer:1992}. \emph{Right}: Same as above but with
-overlaid contours (20-180 mJ in 20 mJ steps) from GBT radio observations at 1.4 GHz \citep{article:BrownRudnick:2010} where
-strong point sources have been subtracted. Shown are also the $0.2^{\circ}$ and $0.4^{\circ}$ radii
-(dashed cyan) considered for the extended source analyses presented here.}
+overlaid contours (20-180 mJ in 20 mJ steps) from GBT radio observations at 1.4 GHz \citep{article:BrownRudnick:2010}, where
+strong point sources have been subtracted. Also shown are the $0.2^{\circ}$ and $0.4^{\circ}$ radii
+(dashed cyan) considered for the extended-source analyses presented here.}
 \label{fig:skymaps}
 \end{figure*}
 
@@ -971,9 +971,10 @@ strong point sources have been subtracted. Shown are also the $0.2^{\circ}$ and 
 \scalebox{1.0}{\plotone{f2.eps}}
 \end{center}
 \caption{$\theta^{2}$ distribution from VERITAS observations of the Coma cluster of galaxies. The
-points with error bars represent the ON-source data sample and the filled area is the background estimation in the OFF-source regions. Each bin represents an annulus around the Coma cluster core
-position. The data were derived from the ring background model using a $0.2^{\circ}$ integration
-radius.}
+points with error bars represent the ON-source data sample and the filled area is the background
+estimation based on the OFF-source regions. Each bin represents an annulus around the Coma cluster
+core position and the annuli are all of equal area. The data were derived from the ring-background
+model using a $0.2^{\circ}$ integration radius.}
 \label{fig:thetasq}
 \end{figure*}
 
@@ -982,8 +983,9 @@ radius.}
 \scalebox{0.75}{\plotone{f3.eps}}
 \end{center}
 \caption{Distribution of significances for Figure \ref{fig:skymaps} and an integration radius of
-$0.2^{\circ}$. The line is a Gaussian fit to the data, with mean $\mu=-0.11\pm 0.0059$ and
-standard deviation $\sigma=1.01\pm 0.003$.}
+$0.2^{\circ}$. The curve is a Gaussian fit to the data, with mean $\mu=-0.11\pm 0.0059$ and
+standard deviation $\sigma=1.01\pm 0.003$, which is consistent with the abscence of gamma-ray
+sources in the field of view.}
 \label{fig:sigdist}
 \end{figure*}
 
@@ -1001,7 +1003,7 @@ scales,][]{article:PinzkePfrommer:2010}.To guide the eye, we show the underlying
 energy distribution of pion decay gamma-rays, $E_\gamma F_\gamma(>E_\gamma)$, resulting from hadronic
 interactions of CRs and ICM protons (dotted). For visualization purposes all photon fluxes are
 weighted with the smallest energy in each interval. Note that the \Fermi limit for the energy
-interval of 1--3 GeV within the aperture of 0.4$^\circ$ is most constraining.}
+interval of 1--3 GeV within the aperture of 0.4$^\circ$ is the most constraining.}
 \label{fig:spectrum}
 \end{figure*}
 
@@ -1010,10 +1012,10 @@ interval of 1--3 GeV within the aperture of 0.4$^\circ$ is most constraining.}
 \scalebox{1.0}{\plotone{f5.eps}}
 \end{center}
 \caption{CR-to-thermal pressure ratio, $X_{\mathrm{CR}}=\expval{P_{\CR}}/ \expval{P_{\mathrm{th}}}$, as
-a function of radial distance from the center of the Coma cluster. Model predictions are shown by
-dashed lines \citep{article:PinzkePfrommer:2010} while these are scaled to match the most
+a function of radial distance from the center of the Coma cluster. The model predictions, shown by
+dashed curves \citep{article:PinzkePfrommer:2010}, have been scaled to match the most
 constraining VERITAS upper limits within 0.2$^\circ$ (solid) and \Fermi upper limits within
-0.4$^\circ$ (dashed). We compare differential $X_\CR$-profiles (grey) to integrated profiles
+0.4$^\circ$ (dashed). We compare differential $X_\CR$ profiles (grey) to integrated profiles
 $X_{\CR}(<R/R_{\rmn{vir}})=\int_0^R P_\CR\, dV / \int_0^R P_{\rmn{th}}\, dV$ (black) which we use to
 compare to the upper limits.}
 \label{fig:xcr}
@@ -1046,7 +1048,7 @@ NGC 4921 & \RA{13}{01}{26.12} & \Dec{+27}{53}{09.59}\\
 \enddata
 \tablecomments{The cluster core is considered both as a point source and a modestly extended
 source. Three central galaxies are also considered in point-source searches. The choice is based on
-evidence of an excess of nonthermal X-ray emission \citep{article:Neumann_etal:2003} at the
+evidence for an excess of nonthermal X-ray emission \citep{article:Neumann_etal:2003} at the
 location of these galaxies.}
 \label{table:roi}
 \end{deluxetable}
@@ -1136,7 +1138,7 @@ U.L.\tablenotemark{a}} (\small{Significance}) & \small{Flux U.L.\tablenotemark{a
 \tablewidth{0pc}
 \tablecaption{Constraints on the CR-to-thermal pressure ratio in the Coma cluster core (simplified,
 isobaric analytic model) for different spatial extensions and predicted fluxes for the energy bands
-1-3 GeV and $>220$~GeV (simulation-based model).}
+1-3 GeV and $>220$~GeV (simulation-based model)}
 \rotate
 \tabletypesize{\small}
 \tablehead{
@@ -1147,29 +1149,28 @@ isobaric analytic model) for different spatial extensions and predicted fluxes f
 & \colhead{$\alpha=2.1$} & \colhead{$\alpha=2.3$} & \colhead{$\alpha=2.5$} & & 
 }
 \startdata
-\multicolumn{6}{c}{VERITAS constraints:}\\
+\multicolumn{6}{c}{VERITAS constraints}\\
 \hline
 0 & 10 & 23 & 97 & 1.9 & 14.8\\
 0.2 & 4.8 & 10 & 43 & 2.9 & 7.2\\
 0.4 & 6.7 & 15 & 62 & 4.4 & 10.8\\
-\cutinhead{\Fermi constraints:}
+\cutinhead{\Fermi constraints}
 0 & 5.2 & 3.5 & 4.7 & 1.4 & 1.96\\
 0.2 & 3.5 & 2.4 & 3.1 & 2.1 & 1.46\\
 0.4 & 2.5 & 1.7 & 2.3 & 3.2 & 1.10\\
 \enddata
 \tablenotetext{a}{Intrinsic source radius (zero means point source), which is convolved with the
-gamma-ray PSF.}
+gamma-ray point-spread function.}
 \tablenotetext{b}{Constraint on the CR-to-thermal pressure ratio,
-$X_{\CR} = \expval{P_\CR}/ \expval{P_\rmn{th}}$, which was assumed to be constant through the
+$X_{\CR} = \expval{P_\CR}/ \expval{P_\rmn{th}}$, which was assumed to be constant throughout the
 cluster and calculated according to \citet{article:PfrommerEnsslin:2004b}.}
 \tablenotetext{c}{Integrated gamma-ray flux from the simulation-based analytic model by
 \citet{article:PinzkePfrommer:2010}: above $E=220~\rmn{GeV}$ in units of $10^{-9}$ ph. m$^{-2}$
-s$^{-1}$ for VERITAS and between $E=1-3~\rmn{GeV}$ in units of $10^{-6}$ ph. m$^{-2}$ s$^{-1}$ for
+s$^{-1}$ for VERITAS and for $E=1-3~\rmn{GeV}$ in units of $10^{-6}$ ph. m$^{-2}$ s$^{-1}$ for
 Fermi.} 
-\tablenotetext{d}{Ratio of flux upper limits ($F_{\rmn{UL}}$) to the integrated gamma-ray flux
-from the simulation-based analytic model: in VERITAS band above $E=220~\rmn{GeV}$ an $\alpha=2.3$
-is assumed for the U.L., and in \Fermi band between $E=1-3$ GeV an $\alpha=2.1$ is assumed for the
-U.L.}
+\tablenotetext{d}{Ratio of flux upper limit ($F_{\rmn{UL}}$) to integrated gamma-ray flux
+from the simulation-based analytic model, with the U.L. based on spectral index $\alpha=2.3$ in
+the VERITAS band ($E>220~\rmn{GeV}$) and $\alpha=2.1$ in the \Fermi band ($E=1-3~\rmn{GeV}$).}
 \label{table:constraints_simple}
 \end{deluxetable}
 
@@ -1180,7 +1181,7 @@ U.L.}
 \tablecolumns{7}
 \tablewidth{0pc}
 \tablecaption{Minimum gamma-ray fluxes in the hadronic model of radio halos, where the
-radio-emitting electrons are secondaries from CR interactions and corresponding minimum relative
+radio-emitting electrons are secondaries from CR interactions, and corresponding minimum relative
 CR pressures for Coma}
 \rotate
 \tabletypesize{\small}
@@ -1192,21 +1193,21 @@ CR pressures for Coma}
 & \colhead{$\alpha=2.1$} & \colhead{$\alpha=2.3$} & \colhead{$\alpha=2.5$}
 }
 \startdata
-\multicolumn{7}{c}{VERITAS energy range, $E>220$~GeV:}\\
+\multicolumn{7}{c}{VERITAS energy range, $E>220$~GeV}\\
 \hline
 0.13 & 1.6 & 0.7 & 0.3 & 0.067 & 0.061 & 0.11 \\
 0.2  & 3.1 & 1.4 & 0.6 & 0.078 & 0.072 & 0.13 \\
 0.4  & 6.3 & 2.8 & 1.3 & 0.098 & 0.090 & 0.16 \\
-\cutinhead{\Fermi energy range, 1--3~GeV:}
+\cutinhead{\Fermi energy range, 1--3~GeV}
 0.13 & ~~3.5 & ~~4.8 & ~~6.4 & 0.067 & 0.061 & 0.11 \\
 0.2  & ~~6.8 & ~~9.3 &  12.5 & 0.078 & 0.072 & 0.13 \\
 0.4  &  13.5 & 18.6  &  25.0 & 0.098 & 0.090 & 0.16 \\
 \enddata
 \tablenotetext{a}{Intrinsic source radius (zero means point source), which is convolved with the
-gamma-ray PSF.}
-\tablenotetext{b}{Minimum gamma-ray flux of the hadronic model described in \S~\ref{sec:Fmin}. 
-Values are in units of $10^{-10}$ ph. m$^{-2}$ s$^{-1}$ (VERITAS energy range) and $10^{-8}$ ph.
-m$^{-2}$ s$^{-1}$ (\Fermi energy range).}
+gamma-ray point-spread function.}
+\tablenotetext{b}{Minimum gamma-ray flux derived from the hadronic model described in
+\S~\ref{sec:Fmin}. Values are in units of $10^{-10}$ ph. m$^{-2}$ s$^{-1}$ for the VERITAS energy
+range and $10^{-8}$ ph. m$^{-2}$ s$^{-1}$ for \Fermi energy range.}
 \tablenotetext{c}{Minimum relative CR pressure, $X_{\CR,\,\rmn{min}}$, in the hadronic model
 described in \S~\ref{sec:Fmin}. For simplicity, we duplicate $X_{\CR,\,\rmn{min}}$ for the VERITAS
 and \Fermi constraints: for a given realization of the CR pressure (and a magnetic field model
@@ -1222,10 +1223,10 @@ gamma-ray fluxes in various bands (1--3 GeV, $>220$ GeV).}
 \tablecolumns{4} \tablewidth{0pc} 
 \tablecaption{Constraints on magnetic fields in the hadronic model of the Coma radio halo and the
 corresponding relative CR pressure (at the largest emission radius of 1 Mpc) such that the model
-reproduces the observed radio surface brightness profile.}
+reproduces the observed radio surface-brightness profile}
 \tablehead{ &
 \multicolumn{6}{c}{Minimum magnetic field, $B_{0,\rmn{min}}~[\mu\rmn{G}]$\tablenotemark{a}:}\\
-& \multicolumn{3}{c}{VERITAS constraints:} & \multicolumn{3}{c}{\Fermi constraints:} \\
+& \multicolumn{3}{c}{VERITAS constraints} & \multicolumn{3}{c}{\Fermi constraints} \\
 \colhead{$\alpha_{B}$} & \colhead{$\alpha=2.1$} & \colhead{$\alpha=2.3$} &
 \colhead{$\alpha=2.5$} & \colhead{$\alpha=2.1$} & \colhead{$\alpha=2.3$} &
 \colhead{$\alpha=2.5$} } \startdata
@@ -1241,8 +1242,8 @@ reproduces the observed radio surface brightness profile.}
 \enddata
 \tablenotetext{a}{The parameters of the magnetic field are the magnetic decline, $\alpha_B$, and
 the central field strength, $B_{0}$, which are defined by
-$B(r) = B_{0}\,[n_\rmn{e}(r) / n_{\rmn{e}}(0)]^{\alpha_B}$. In all cases we used the most constraining
-$\rmn{R}=0.4^\circ$, see \S~\ref{sec:B} for details.}  
+$B(r) = B_{0}\,[n_\rmn{e}(r) / n_{\rmn{e}}(0)]^{\alpha_B}$. In all cases, we used the most constraining
+$\rmn{R}=0.4^\circ$; see \S~\ref{sec:B} for details.}  
 \label{table:Bmin}
 \end{deluxetable}
 
@@ -1265,7 +1266,7 @@ $\rmn{R}=0.4^\circ$, see \S~\ref{sec:B} for details.}
 \enddata
 \tablecomments{$\expval{J}_{\rmn{bkg}}$ is the astrophysical factor calculated for the background
 region (ring method) and is used to estimate the level of gamma-ray contamination from DM
-annihilation. $\alpha$ is the size ratio of the ON vs OFF source regions.}
+annihilation. $\alpha$ is the size ratio of the ON and OFF source regions.}
 \label{table:astrofactor}
 \end{deluxetable}
 
@@ -1275,7 +1276,7 @@ annihilation. $\alpha$ is the size ratio of the ON vs OFF source regions.}
 \begin{deluxetable}{lccc}
 \tablecolumns{4}
 \tablewidth{0pc}
-\tablecaption{Limits on the DM annihilation cross section times velocity $\expval{\sigma v}$
+\tablecaption{Upper limits on the DM annihilation cross section times velocity $\expval{\sigma v}$
 from VERITAS observations of the Coma cluster.}
 \tablehead{
 \colhead{Channel} & R [deg] & $m_{\chi}$ [GeV] & $\expval{\sigma v}$ [cm$^{3}$ s$^{-1}$]
@@ -1291,8 +1292,8 @@ $\tau^{+}\tau^{-}$ & 0 & 670 & $2.4\times 10^{-21}$ \\
 & 0.2 & 650 & $9.1\times 10^{-22}$ \\
 & 0.4 & 660 & $1.8\times 10^{-21}$
 \enddata
-\tablecomments{Upper limits are for different integration regions and DM particle mass $m_{\chi}$
-derived from the VERITAS gamma-ray flux upper limits presented in this work.}
+\tablecomments{Upper limits are shown for different integration regions and DM particle mass
+$m_{\chi}$, and are derived from the VERITAS gamma-ray flux upper limits presented in this work.}
 \label{table:DMlimits}
 \end{deluxetable}
 
