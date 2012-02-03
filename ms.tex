@@ -972,7 +972,7 @@ strong point sources have been subtracted. Shown are also the $0.2^{\circ}$ and 
 \end{center}
 \caption{$\theta^{2}$ distribution from VERITAS observations of the Coma cluster of galaxies. The
 points with error bars represent the ON-source data sample and the filled area is the background estimation in the OFF-source regions. Each bin represents an annulus around the Coma cluster core
-position. The data were derived from the ring background model using a $0.2^{\circ}$ sampling
+position. The data were derived from the ring background model using a $0.2^{\circ}$ integration
 radius.}
 \label{fig:thetasq}
 \end{figure*}
@@ -981,7 +981,7 @@ radius.}
 \begin{center}
 \scalebox{0.75}{\plotone{f3.eps}}
 \end{center}
-\caption{Distribution of significances for Figure \ref{fig:skymaps} and a sampling radius of
+\caption{Distribution of significances for Figure \ref{fig:skymaps} and an integration radius of
 $0.2^{\circ}$. The line is a Gaussian fit to the data, with mean $\mu=-0.11\pm 0.0059$ and
 standard deviation $\sigma=1.01\pm 0.003$.}
 \label{fig:sigdist}
@@ -1035,8 +1035,8 @@ gamma-ray flux upper limits ($0.2^{\circ}$ aperture) presented in this work.}
 \tablecaption{Regions of interest in the Coma cluster field of view}
 \tablehead{
 \colhead{Source} &
-\colhead{RA} &
-\colhead{Dec}
+\colhead{RA (J2000)} &
+\colhead{Dec (J2000)}
 }
 \startdata
 Core & \RA{12}{59}{48.7} & \Dec{+27}{58}{50.0}\\
@@ -1057,8 +1057,8 @@ location of these galaxies.}
 \begin{deluxetable}{lccccccccc}
 \tablecolumns{10}
 \tablewidth{0pc}
-\tablecaption{VERITAS flux upper limits for different regions of interest in the Coma cluster of
-galaxies and surroundings}
+\tablecaption{VERITAS VHE gamma-ray flux upper limits for different regions of interest in the
+Coma cluster of galaxies and surroundings}
 \rotate
 \tablehead{
 \colhead{Source} & 
@@ -1083,12 +1083,13 @@ NGC 4874 & 0 & -14 & -0.71 & - & - &  1.51 & (0.45\%)  & - & - \\
 NGC 4921 & 0 & -4 & -0.23 & - & - &  2.41 & (0.72\%)  & - & -
 \enddata
 \tablenotetext{a}{Intrinsic source radius (zero means point source), which is convolved with the
-gamma-ray PSF.}
-\tablenotetext{b}{Event counts in the source region.}
+gamma-ray point-spread function.}
+\tablenotetext{b}{Net event counts in the source region.}
 \tablenotetext{c}{Statistical significance calculated according to \citet{article:LiMa:1983}.}
 \tablenotetext{d}{99\% confidence level upper limit in units of $10^{-8}$ ph. m$^{-2}$ s$^{-1}$
 calculated according to \citet{article:Rolke_etal:2005} above an energy threshold of 220 GeV, with
-corresponding fluxes in percent of the steady Crab Nebula flux in parenthesis.}
+corresponding fluxes in percent of the steady Crab Nebula flux in parenthesis, for different
+values of the spectral index, $\alpha$.}
 \label{table:results}
 \end{deluxetable}
 
@@ -1098,7 +1099,7 @@ corresponding fluxes in percent of the steady Crab Nebula flux in parenthesis.}
 \begin{deluxetable}{lccc}
 \tablecolumns{4}
 \tablewidth{0pc}
-\tablecaption{\Fermi-LAT upper limits for the Coma cluster core}
+\tablecaption{\Fermi-LAT HE gamma-ray flux upper limits for the Coma cluster core}
 \tablehead{
                       & $1-3$ GeV & $3-10$ GeV & $10-30$ GeV\\
 \small{Spatial Model} & \small{Flux U.L.\tablenotemark{a}} (\small{Significance}) & \small{Flux
@@ -1120,46 +1121,12 @@ U.L.\tablenotemark{a}} (\small{Significance}) & \small{Flux U.L.\tablenotemark{a
 \small{Disk: r = 0.2$^\circ$} & 3.184 (0.658) & 1.259 (0.349) & 1.167 (2.112)\\
 \small{Disk: r = 0.4$^\circ$} & 3.647 (0.804) & 1.381 (0.362) & 1.237 (2.408)\\
 \enddata
-\tablenotetext{a}{99\% confidence level upper limit in units of $10^{-6}$ ph. m$^{-2}$ s$^{-1}$.}
+\tablenotetext{a}{99\% confidence level flux upper limit in units of $10^{-6}$ ph. m$^{-2}$ s$^{-1}$.}
 \label{table:fermi}
 \end{deluxetable}
 
 %
 %
-
-\del{
-\begin{deluxetable}{lcccccc}
-\tablecolumns{7}
-\tablewidth{0pc}
-\tablecaption{\Fermi-LAT upper limits for the Coma cluster core}
-\tablehead{
-\colhead{Spatial model} & 
-\multicolumn{3}{c}{S[$\sigma$]\tablenotemark{a}} & 
-\multicolumn{3}{c}{Flux U.L.\tablenotemark{b}} \\
-\colhead{} & 
-\colhead{1-3 GeV} & 
-\colhead{3-10 GeV} & 
-\colhead{10-30 GeV} & 
-\colhead{1-3 GeV} & 
-\colhead{3-10 GeV} & 
-\colhead{10-30 GeV} \\
-\hline
-\multicolumn{7}{c}{Spectral index $\alpha=2.1$ (fixed)}
-}
-\startdata
-Point source & 0.30 & 0 & 1.3 & 1.73 & 4.87 & 0.627 \\
-Disk, $R=0.2^{\circ}$ & 0.65 & 0.22 & 2.0 & 2.03 & 0.691 & 0.783 \\
-Disk, $R=0.4^{\circ}$ & 0.77 & 0.18 & 2.3 & 2.39 & 0.757 & 0.847 \\
-\cutinhead{Spectral index $\alpha=2.5$ (fixed)}
-Point source & 0.33 & 0 & 1.42 & 1.81 & 0.526 & 0.635 \\
-Disk, $R=0.2^{\circ}$ & 0.66 & 0.35 & 2.1 & 2.12 & 0.748 & 0.785 \\
-Disk, $R=0.4^{\circ}$ & 0.80 & 0.36 & 2.4 & 2.50 & 0.833 & 0.849 \\
-\enddata
-\tablenotetext{a}{Statistical significance.}
-\tablenotetext{b}{95\% confidence level upper limit in units of $10^{-6}$ ph. m$^{-2}$ s$^{-1}$.}
-\label{table:fermi}
-\end{deluxetable}
-}
 
 %
 %
@@ -1167,9 +1134,9 @@ Disk, $R=0.4^{\circ}$ & 0.80 & 0.36 & 2.4 & 2.50 & 0.833 & 0.849 \\
 \begin{deluxetable}{cccccc}
 \tablecolumns{6}
 \tablewidth{0pc}
-\tablecaption{Constraints on the relative CR pressure in the Coma cluster core (simplified, isobaric
-analytic model) for different spatial extensions and predicted fluxes for the energy bands 1-3 GeV
-and $>220$~GeV (simulation-based model).}
+\tablecaption{Constraints on the CR-to-thermal pressure ratio in the Coma cluster core (simplified,
+isobaric analytic model) for different spatial extensions and predicted fluxes for the energy bands
+1-3 GeV and $>220$~GeV (simulation-based model).}
 \rotate
 \tabletypesize{\small}
 \tablehead{
@@ -1192,7 +1159,7 @@ and $>220$~GeV (simulation-based model).}
 \enddata
 \tablenotetext{a}{Intrinsic source radius (zero means point source), which is convolved with the
 gamma-ray PSF.}
-\tablenotetext{b}{Constraint on the relative CR pressure,
+\tablenotetext{b}{Constraint on the CR-to-thermal pressure ratio,
 $X_{\CR} = \expval{P_\CR}/ \expval{P_\rmn{th}}$, which was assumed to be constant through the
 cluster and calculated according to \citet{article:PfrommerEnsslin:2004b}.}
 \tablenotetext{c}{Integrated gamma-ray flux from the simulation-based analytic model by
@@ -1297,8 +1264,8 @@ $\rmn{R}=0.4^\circ$, see \S~\ref{sec:B} for details.}
 0.4 & $9.4\times 10^{16}$ & $1.3\times 10^{15}$ ($\simeq0.01\expval{J}_{\rmn{signal}}$, negligible)
 \enddata
 \tablecomments{$\expval{J}_{\rmn{bkg}}$ is the astrophysical factor calculated for the background
-region (ring method) and is used to estimate the level of gamma-ray contamination from DM. $\alpha$
-is the size ratio of the ON vs OFF source regions.}
+region (ring method) and is used to estimate the level of gamma-ray contamination from DM
+annihilation. $\alpha$ is the size ratio of the ON vs OFF source regions.}
 \label{table:astrofactor}
 \end{deluxetable}
 
@@ -1308,7 +1275,8 @@ is the size ratio of the ON vs OFF source regions.}
 \begin{deluxetable}{lccc}
 \tablecolumns{4}
 \tablewidth{0pc}
-\tablecaption{Limits on the DM annihilation cross section $\expval{\sigma v}$}
+\tablecaption{Limits on the DM annihilation cross section times velocity $\expval{\sigma v}$
+from VERITAS observations of the Coma cluster.}
 \tablehead{
 \colhead{Channel} & R [deg] & $m_{\chi}$ [GeV] & $\expval{\sigma v}$ [cm$^{3}$ s$^{-1}$]
 }
